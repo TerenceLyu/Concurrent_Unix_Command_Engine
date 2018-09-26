@@ -35,13 +35,14 @@ public class SequentialCommandBuilder
 		switch (s[0])
 		{
 			case "cat":
-				filter = new CAT();
+				filter = new CAT(s[1]);
 				break;
 			case "grep":
 				filter = new GREP(s[1]);
 				break;
-//			case "":
-//				break;
+			case "uniq":
+				filter = new UNIQ();
+				break;
 //			case "":
 //				break;
 			default:
