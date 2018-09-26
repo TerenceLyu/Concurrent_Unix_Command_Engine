@@ -1,6 +1,6 @@
 package cs131.pa1.filter.sequential;
 import java.util.*;
-//import cs131.pa1.filter.sequential.SequentialCommandBuilder;
+import cs131.pa1.filter.sequential.SequentialCommandBuilder;
 import cs131.pa1.filter.Message;
 public class SequentialREPL
 {
@@ -10,7 +10,6 @@ public class SequentialREPL
 	public static void main(String[] args)
 	{
 		Scanner input = new Scanner(System.in);
-
 		System.out.print(Message.WELCOME);
 		boolean exit = false;
 		SequentialCommandBuilder SCB = new SequentialCommandBuilder();

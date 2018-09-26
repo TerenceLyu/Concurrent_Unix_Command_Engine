@@ -30,8 +30,9 @@ public class SequentialCommandBuilder {
 			case "cat":
 				filter = new CAT();
 				break;
-//			case "":
-//				break;
+			case "grep":
+				filter = new GREP(s[1]);
+				break;
 //			case "":
 //				break;
 //			case "":
