@@ -1,11 +1,17 @@
 package cs131.pa1.filter.sequential;
 
+import java.util.LinkedList;
 import java.util.List;
-
+import cs131.pa1.filter.fliters.*;
 public class SequentialCommandBuilder {
 	
 	public static List<SequentialFilter> createFiltersFromCommand(String command){
-		return null;
+		List<SequentialFilter> list = new LinkedList<>();
+		for (String s: command.split("\\|"))
+		{
+			list.add(constructFilterFromSubCommand(s));
+		}
+		return list;
 	}
 	
 	private static SequentialFilter determineFinalFilter(String command){
@@ -17,7 +23,22 @@ public class SequentialCommandBuilder {
 	}
 	
 	private static SequentialFilter constructFilterFromSubCommand(String subCommand){
-		return null;
+		String[] s = subCommand.split(" ");
+		SequentialFilter filter = null;
+		switch (s[0])
+		{
+			case "cat":
+				filter = new CAT();
+				break;
+//			case "":
+//				break;
+//			case "":
+//				break;
+//			case "":
+//				break;
+//
+		}
+		return filter;
 	}
 
 	private static boolean linkFilters(List<SequentialFilter> filters){
