@@ -2,13 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="119a49c3-ce97-4f9f-81e4-aa4b76b13ef3" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/cs131a_PA1_Part1_StarterKit/cs131/pa1/filter/sequential/SequentialCommandBuilder.class" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/cs131a_PA1_Part1_StarterKit/cs131/pa1/filter/fliters/GREP.class" afterPath="$PROJECT_DIR$/out/production/cs131a_PA1_Part1_StarterKit/cs131/pa1/filter/fliters/GREP.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/coco.txt" afterPath="$PROJECT_DIR$/coco.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cs131a_PA1_Part1_StarterKit/cs131a_PA1_Part1_StarterKit/src/cs131/pa1/filter/fliters/UNIQ.java" afterPath="$PROJECT_DIR$/cs131a_PA1_Part1_StarterKit/cs131a_PA1_Part1_StarterKit/src/cs131/pa1/filter/fliters/UNIQ.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cs131a_PA1_Part1_StarterKit/cs131a_PA1_Part1_StarterKit/src/cs131/pa1/filter/sequential/SequentialCommandBuilder.java" afterPath="$PROJECT_DIR$/cs131a_PA1_Part1_StarterKit/cs131a_PA1_Part1_StarterKit/src/cs131/pa1/filter/sequential/SequentialCommandBuilder.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test.txt" afterPath="$PROJECT_DIR$/test.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cs131a_PA1_Part1_StarterKit/cs131a_PA1_Part1_StarterKit/src/cs131/pa1/filter/fliters/WC.java" afterPath="$PROJECT_DIR$/cs131a_PA1_Part1_StarterKit/cs131a_PA1_Part1_StarterKit/src/cs131/pa1/filter/fliters/WC.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -41,24 +35,31 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SequentialCommandBuilder.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/cs131a_PA1_Part1_StarterKit/cs131a_PA1_Part1_StarterKit/src/cs131/pa1/filter/sequential/SequentialCommandBuilder.java">
+      <file leaf-file-name="SequentialFilter.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/cs131a_PA1_Part1_StarterKit/cs131a_PA1_Part1_StarterKit/src/cs131/pa1/filter/sequential/SequentialFilter.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="181">
-              <caret line="60" column="22" lean-forward="true" selection-start-line="60" selection-start-column="22" selection-end-line="60" selection-end-column="22" />
-              <folding />
+            <state relative-caret-position="-76">
+              <caret line="38" column="13" lean-forward="true" selection-start-line="38" selection-start-column="13" selection-end-line="38" selection-end-column="13" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="method#setNextFilter#0;class#SequentialFilter#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="UNIQ.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/cs131a_PA1_Part1_StarterKit/cs131a_PA1_Part1_StarterKit/src/cs131/pa1/filter/fliters/UNIQ.java">
+      <file leaf-file-name="WC.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/cs131a_PA1_Part1_StarterKit/cs131a_PA1_Part1_StarterKit/src/cs131/pa1/filter/fliters/WC.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="10" column="36" lean-forward="false" selection-start-line="10" selection-start-column="36" selection-end-line="10" selection-end-column="36" />
+            <state relative-caret-position="116">
+              <caret line="33" column="16" lean-forward="true" selection-start-line="33" selection-start-column="16" selection-end-line="33" selection-end-column="16" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="method#processLine#0;class#UNIQ#0" expanded="true" />
+                <element signature="method#WC#0;class#WC#0" expanded="true" />
+                <element signature="method#process#0;class#WC#0" expanded="true" />
+                <element signature="e#349#357#0" expanded="true" />
+                <element signature="e#366#393#1" expanded="true" />
+                <element signature="method#processLine#0;class#WC#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -87,12 +88,12 @@
         <option value="$PROJECT_DIR$/cs131a_PA1_Part1_StarterKit/cs131a_PA1_Part1_StarterKit/src/cs131/pa1/filter/fliters/CAT.java" />
         <option value="$PROJECT_DIR$/cs131a_PA1_Part1_StarterKit/cs131a_PA1_Part1_StarterKit/src/cs131/pa1/filter/fliters/FILE.java" />
         <option value="$PROJECT_DIR$/cs131a_PA1_Part1_StarterKit/cs131a_PA1_Part1_StarterKit/src/cs131/pa1/filter/sequential/SequentialREPL.java" />
-        <option value="$PROJECT_DIR$/cs131a_PA1_Part1_StarterKit/cs131a_PA1_Part1_StarterKit/src/cs131/pa1/filter/fliters/WC.java" />
         <option value="$PROJECT_DIR$/cs131a_PA1_Part1_StarterKit/cs131a_PA1_Part1_StarterKit/src/cs131/pa1/filter/sequential/SequentialCommandBuilder.java" />
         <option value="$PROJECT_DIR$/cs131a_PA1_Part1_StarterKit/cs131a_PA1_Part1_StarterKit/src/cs131/pa1/filter/fliters/GREP.java" />
         <option value="$PROJECT_DIR$/test.txt" />
         <option value="$PROJECT_DIR$/cs131a_PA1_Part1_StarterKit/cs131a_PA1_Part1_StarterKit/src/cs131/pa1/filter/fliters/UNIQ.java" />
         <option value="$PROJECT_DIR$/coco.txt" />
+        <option value="$PROJECT_DIR$/cs131a_PA1_Part1_StarterKit/cs131a_PA1_Part1_StarterKit/src/cs131/pa1/filter/fliters/WC.java" />
       </list>
     </option>
   </component>
@@ -532,7 +533,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="1280" height="720" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
@@ -543,7 +543,7 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32937062" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.29248366" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.29248366" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32931158" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -627,7 +627,6 @@
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#setNextFilter#0;class#SequentialFilter#0" expanded="true" />
-            <element signature="e#862#889#1" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -671,7 +670,6 @@
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#setNextFilter#0;class#SequentialFilter#0" expanded="true" />
-            <element signature="e#862#889#1" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -723,7 +721,6 @@
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#setNextFilter#0;class#SequentialFilter#0" expanded="true" />
-            <element signature="e#862#889#1" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -776,7 +773,6 @@
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#setNextFilter#0;class#SequentialFilter#0" expanded="true" />
-            <element signature="e#862#889#1" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -889,7 +885,6 @@
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#setNextFilter#0;class#SequentialFilter#0" expanded="true" />
-            <element signature="e#862#889#1" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -932,7 +927,6 @@
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#setNextFilter#0;class#SequentialFilter#0" expanded="true" />
-            <element signature="e#862#889#1" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1033,38 +1027,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cs131a_PA1_Part1_StarterKit/cs131a_PA1_Part1_StarterKit/src/cs131/pa1/filter/sequential/SequentialFilter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="38" column="13" lean-forward="true" selection-start-line="38" selection-start-column="13" selection-end-line="38" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#setNextFilter#0;class#SequentialFilter#0" expanded="true" />
-            <element signature="e#862#889#1" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cs131a_PA1_Part1_StarterKit/cs131a_PA1_Part1_StarterKit/src/cs131/pa1/filter/sequential/SequentialREPL.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="748">
-          <caret line="30" column="29" lean-forward="true" selection-start-line="30" selection-start-column="29" selection-end-line="30" selection-end-column="29" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#926#950#0" expanded="true" />
-            <element signature="e#926#950#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cs131a_PA1_Part1_StarterKit/cs131a_PA1_Part1_StarterKit/src/cs131/pa1/filter/sequential/SequentialCommandBuilder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="181">
-          <caret line="60" column="22" lean-forward="true" selection-start-line="60" selection-start-column="22" selection-end-line="60" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/cs131a_PA1_Part1_StarterKit/cs131a_PA1_Part1_StarterKit/src/cs131/pa1/filter/fliters/GREP.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="296">
@@ -1073,45 +1035,6 @@
             <element signature="imports" expanded="true" />
             <element signature="method#GREP#0;class#GREP#0" expanded="true" />
             <element signature="method#processLine#0;class#GREP#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cs131a_PA1_Part1_StarterKit/cs131a_PA1_Part1_StarterKit/src/cs131/pa1/filter/fliters/WC.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="445">
-          <caret line="19" column="5" lean-forward="false" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#WC#0;class#WC#0" expanded="true" />
-            <element signature="e#349#364#0" expanded="true" />
-            <element signature="e#373#400#1" expanded="true" />
-            <element signature="e#446#513#1" expanded="true" />
-            <element signature="e#462#512#0" expanded="true" />
-            <element signature="e#462#512#0" expanded="true" />
-            <element signature="e#462#512#0" expanded="true" />
-            <element signature="e#462#512#0" expanded="true" />
-            <element signature="e#462#512#0" expanded="true" />
-            <element signature="e#462#512#0" expanded="true" />
-            <element signature="method#processLine#0;class#WC#0" expanded="true" />
-            <element signature="e#626#636#1" expanded="true" />
-            <element signature="e#621#738#0" expanded="true" />
-            <element signature="e#621#738#0" expanded="true" />
-            <element signature="e#621#738#0" expanded="true" />
-            <element signature="e#690#704#0" expanded="true" />
-            <element signature="e#690#704#0" expanded="true" />
-            <element signature="e#756#779#1" expanded="true" />
-            <element signature="e#782#811#1" expanded="true" />
-            <element signature="e#820#830#1" expanded="true" />
-            <element signature="e#815#1141#0" expanded="true" />
-            <element signature="e#815#1141#0" expanded="true" />
-            <element signature="e#815#1141#0" expanded="true" />
-            <element signature="e#885#899#0" expanded="true" />
-            <element signature="e#885#899#0" expanded="true" />
-            <element signature="e#976#990#0" expanded="true" />
-            <element signature="e#976#990#0" expanded="true" />
-            <element signature="e#1081#1095#0" expanded="true" />
-            <element signature="e#1081#1095#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1134,11 +1057,57 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/cs131a_PA1_Part1_StarterKit/cs131a_PA1_Part1_StarterKit/src/cs131/pa1/filter/fliters/UNIQ.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
+        <state relative-caret-position="280">
           <caret line="10" column="36" lean-forward="false" selection-start-line="10" selection-start-column="36" selection-end-line="10" selection-end-column="36" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#processLine#0;class#UNIQ#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cs131a_PA1_Part1_StarterKit/cs131a_PA1_Part1_StarterKit/src/cs131/pa1/filter/sequential/SequentialCommandBuilder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="66">
+          <caret line="60" column="22" lean-forward="true" selection-start-line="60" selection-start-column="22" selection-end-line="60" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cs131a_PA1_Part1_StarterKit/cs131a_PA1_Part1_StarterKit/src/cs131/pa1/filter/sequential/SequentialREPL.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="748">
+          <caret line="30" column="29" lean-forward="true" selection-start-line="30" selection-start-column="29" selection-end-line="30" selection-end-column="29" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#926#950#0" expanded="true" />
+            <element signature="e#926#950#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cs131a_PA1_Part1_StarterKit/cs131a_PA1_Part1_StarterKit/src/cs131/pa1/filter/sequential/SequentialFilter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-76">
+          <caret line="38" column="13" lean-forward="true" selection-start-line="38" selection-start-column="13" selection-end-line="38" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#setNextFilter#0;class#SequentialFilter#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cs131a_PA1_Part1_StarterKit/cs131a_PA1_Part1_StarterKit/src/cs131/pa1/filter/fliters/WC.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="116">
+          <caret line="33" column="16" lean-forward="true" selection-start-line="33" selection-start-column="16" selection-end-line="33" selection-end-column="16" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#WC#0;class#WC#0" expanded="true" />
+            <element signature="method#process#0;class#WC#0" expanded="true" />
+            <element signature="e#349#357#0" expanded="true" />
+            <element signature="e#366#393#1" expanded="true" />
+            <element signature="method#processLine#0;class#WC#0" expanded="true" />
           </folding>
         </state>
       </provider>

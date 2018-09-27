@@ -18,7 +18,7 @@ public class WC extends SequentialFilter
 	@Override
 	public void process()
 	{
-		while (!input.isEmpty())
+		while (!isDone())
 		{
 			String curr = input.poll();
 			this.line ++;
