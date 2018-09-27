@@ -4,9 +4,8 @@ import cs131.pa1.filter.sequential.SequentialCommandBuilder;
 import cs131.pa1.filter.Message;
 public class SequentialREPL
 {
-
 	static String currentWorkingDirectory;
-
+	
 	public static void main(String[] args)
 	{
 		Scanner input = new Scanner(System.in);
@@ -15,21 +14,29 @@ public class SequentialREPL
 		while (!exit)
 		{
 			System.out.print(Message.NEWCOMMAND);
-			String command = input.next();
+			String command = input.nextLine();
 			if (!command.equals("exit"))
 			{
 				LinkedList listOfCommand = (LinkedList) SequentialCommandBuilder.createFiltersFromCommand(command);
-				Iterator iterator = listOfCommand.listIterator();
-				SequentialFilter curr = (SequentialFilter) iterator.next();
-				SequentialFilter prev;
-				curr.process();
-				while (iterator.hasNext())
+				if (listOfCommand!=null)
 				{
-					prev = curr;
-					curr = (SequentialFilter) iterator.next();
-					curr.setPrevFilter(prev);
+					Iterator iterator = listOfCommand.listIterator();
+					SequentialFilter curr = (SequentialFilter) iterator.next();
+					SequentialFilter prev;
 					curr.process();
+					while (iterator.hasNext())
+					{
+						prev = curr;
+						curr = (SequentialFilter) iterator.next();
+						curr.setPrevFilter(prev);
+						curr.process();
+					}
+					while (!curr.output.isEmpty())
+					{
+						System.out.println(curr.output.poll());
+					}
 				}
+				
 			}else
 			{
 				exit = true;

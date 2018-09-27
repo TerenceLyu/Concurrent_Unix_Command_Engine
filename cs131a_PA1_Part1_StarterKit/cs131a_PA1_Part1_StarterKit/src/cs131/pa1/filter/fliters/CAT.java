@@ -2,6 +2,7 @@ package cs131.pa1.filter.fliters;
 import cs131.pa1.filter.Message;
 import cs131.pa1.filter.sequential.SequentialFilter;
 import java.io.File;
+import java.util.LinkedList;
 import java.util.Scanner;
 
 public class CAT extends SequentialFilter
@@ -11,21 +12,25 @@ public class CAT extends SequentialFilter
 	public CAT(String fileName)
 	{
 		this.fileName = fileName;
+		this.output = new LinkedList<>();
 	}
 	@Override
 	public void process()
 	{
+//		System.out.println(new File(".").getAbsoluteFile());
 		File f = new File(this.fileName);
+		
 		Scanner input;
 		try
 		{
-			input = new Scanner(f);
-			while (input.hasNextLine())
+			Scanner scanner = new Scanner(f);
+			while (scanner.hasNextLine())
 			{
-				this.output.add(input.nextLine());
+				this.output.add(scanner.nextLine());
 			}
 		} catch (Exception e)
 		{
+			e.printStackTrace();
 			System.out.print(Message.FILE_NOT_FOUND.with_parameter(this.fileName));
 		}
 	}

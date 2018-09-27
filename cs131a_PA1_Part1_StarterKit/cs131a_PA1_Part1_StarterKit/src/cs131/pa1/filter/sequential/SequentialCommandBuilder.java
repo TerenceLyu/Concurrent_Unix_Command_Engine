@@ -1,5 +1,6 @@
 package cs131.pa1.filter.sequential;
 
+import java.util.Arrays;
 import java.util.LinkedList;
 import java.util.List;
 import cs131.pa1.filter.fliters.*;
@@ -13,7 +14,15 @@ public class SequentialCommandBuilder
 		List<SequentialFilter> list = new LinkedList<>();
 		for (String s: command.split("\\|"))
 		{
-			list.add(constructFilterFromSubCommand(s));
+			SequentialFilter sf = constructFilterFromSubCommand(s);
+			if (sf!=null)
+			{
+				list.add(sf);
+			}else
+			{
+				return null;
+			}
+			
 		}
 		return list;
 	}
@@ -31,6 +40,7 @@ public class SequentialCommandBuilder
 	private static SequentialFilter constructFilterFromSubCommand(String subCommand)
 	{
 		String[] s = subCommand.split(" ");
+//		System.out.println(Arrays.toString(s));
 		SequentialFilter filter = null;
 		switch (s[0])
 		{
