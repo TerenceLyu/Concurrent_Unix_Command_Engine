@@ -43,8 +43,9 @@ public class SequentialCommandBuilder
 			case "uniq":
 				filter = new UNIQ();
 				break;
-//			case "":
-//				break;
+			case ">":
+				filter = new FILE(s[1]);
+				break;
 			default:
 				System.out.print(Message.COMMAND_NOT_FOUND.with_parameter(s[0]));
 				return null;
