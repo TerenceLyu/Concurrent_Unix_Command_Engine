@@ -8,6 +8,7 @@ public class UNIQ extends SequentialFilter
 	public UNIQ()
 	{
 		this.output = new LinkedList<>();
+		this.uniq = new HashSet<>();
 	}
 	
 	@Override

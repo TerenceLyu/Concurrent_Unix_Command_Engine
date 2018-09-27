@@ -56,6 +56,9 @@ public class SequentialCommandBuilder
 			case ">":
 				filter = new FILE(s[1]);
 				break;
+			case "wc":
+				filter = new WC();
+				break;
 			default:
 				System.out.print(Message.COMMAND_NOT_FOUND.with_parameter(s[0]));
 				return null;
