@@ -2,13 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="119a49c3-ce97-4f9f-81e4-aa4b76b13ef3" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/cs131a_PA1_Part1_StarterKit/cs131a_PA1_Part1_StarterKit/src/cs131/pa1/filter/fliters/CAT.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cs131a_PA1_Part1_StarterKit/cs131a_PA1_Part1_StarterKit/src/cs131/pa1/filter/fliters/FILE.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cs131a_PA1_Part1_StarterKit/cs131a_PA1_Part1_StarterKit/src/cs131/pa1/filter/fliters/GREP.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cs131a_PA1_Part1_StarterKit/cs131a_PA1_Part1_StarterKit/src/cs131/pa1/filter/fliters/UNIQ.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cs131a_PA1_Part1_StarterKit/cs131a_PA1_Part1_StarterKit/src/cs131/pa1/filter/fliters/WC.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/cs131a_PA1_Part1_StarterKit/cs131a_PA1_Part1_StarterKit/src/cs131/pa1/filter/sequential/LS.java" afterPath="$PROJECT_DIR$/cs131a_PA1_Part1_StarterKit/cs131a_PA1_Part1_StarterKit/src/cs131/pa1/filter/sequential/LS.java" />
       <change beforePath="$PROJECT_DIR$/cs131a_PA1_Part1_StarterKit/cs131a_PA1_Part1_StarterKit/src/cs131/pa1/filter/sequential/SequentialCommandBuilder.java" afterPath="$PROJECT_DIR$/cs131a_PA1_Part1_StarterKit/cs131a_PA1_Part1_StarterKit/src/cs131/pa1/filter/sequential/SequentialCommandBuilder.java" />
-      <change beforePath="$PROJECT_DIR$/cs131a_PA1_Part1_StarterKit/cs131a_PA1_Part1_StarterKit/src/cs131/pa1/filter/sequential/SequentialREPL.java" afterPath="$PROJECT_DIR$/cs131a_PA1_Part1_StarterKit/cs131a_PA1_Part1_StarterKit/src/cs131/pa1/filter/sequential/SequentialREPL.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -39,10 +34,25 @@
       <file leaf-file-name="SequentialCommandBuilder.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/cs131a_PA1_Part1_StarterKit/cs131a_PA1_Part1_StarterKit/src/cs131/pa1/filter/sequential/SequentialCommandBuilder.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1688">
-              <caret line="66" column="29" lean-forward="false" selection-start-line="66" selection-start-column="29" selection-end-line="66" selection-end-column="29" />
+            <state relative-caret-position="758">
+              <caret line="66" column="35" lean-forward="false" selection-start-line="66" selection-start-column="35" selection-end-line="66" selection-end-column="35" />
               <folding>
                 <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CD.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/cs131a_PA1_Part1_StarterKit/cs131a_PA1_Part1_StarterKit/src/cs131/pa1/filter/sequential/CD.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="434">
+              <caret line="7" column="4" lean-forward="true" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="4" />
+              <folding>
+                <element signature="e#153#154#0" expanded="true" />
+                <element signature="e#175#176#0" expanded="true" />
+                <element signature="e#234#235#0" expanded="true" />
+                <element signature="e#252#253#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -81,8 +91,8 @@
       <file leaf-file-name="LS.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/cs131a_PA1_Part1_StarterKit/cs131a_PA1_Part1_StarterKit/src/cs131/pa1/filter/sequential/LS.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="36" lean-forward="false" selection-start-line="0" selection-start-column="36" selection-end-line="0" selection-end-column="36" />
+            <state relative-caret-position="372">
+              <caret line="6" column="4" lean-forward="false" selection-start-line="6" selection-start-column="4" selection-end-line="6" selection-end-column="4" />
               <folding />
             </state>
           </provider>
@@ -117,18 +127,6 @@
             <state relative-caret-position="-1240">
               <caret line="0" column="36" lean-forward="false" selection-start-line="0" selection-start-column="36" selection-end-line="0" selection-end-column="36" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SequentialFilter.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/cs131a_PA1_Part1_StarterKit/cs131a_PA1_Part1_StarterKit/src/cs131/pa1/filter/sequential/SequentialFilter.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1504">
-              <caret line="44" column="32" lean-forward="false" selection-start-line="44" selection-start-column="32" selection-end-line="44" selection-end-column="32" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -169,10 +167,11 @@
         <option value="$PROJECT_DIR$/cs131a_PA1_Part1_StarterKit/cs131a_PA1_Part1_StarterKit/src/cs131/pa1/filter/sequential/CAT.java" />
         <option value="$PROJECT_DIR$/cs131a_PA1_Part1_StarterKit/cs131a_PA1_Part1_StarterKit/src/cs131/pa1/filter/sequential/FILE.java" />
         <option value="$PROJECT_DIR$/cs131a_PA1_Part1_StarterKit/cs131a_PA1_Part1_StarterKit/src/cs131/pa1/filter/sequential/GREP.java" />
-        <option value="$PROJECT_DIR$/cs131a_PA1_Part1_StarterKit/cs131a_PA1_Part1_StarterKit/src/cs131/pa1/filter/sequential/LS.java" />
         <option value="$PROJECT_DIR$/cs131a_PA1_Part1_StarterKit/cs131a_PA1_Part1_StarterKit/src/cs131/pa1/filter/sequential/PWD.java" />
         <option value="$PROJECT_DIR$/cs131a_PA1_Part1_StarterKit/cs131a_PA1_Part1_StarterKit/src/cs131/pa1/filter/sequential/UNIQ.java" />
         <option value="$PROJECT_DIR$/cs131a_PA1_Part1_StarterKit/cs131a_PA1_Part1_StarterKit/src/cs131/pa1/filter/sequential/WC.java" />
+        <option value="$PROJECT_DIR$/cs131a_PA1_Part1_StarterKit/cs131a_PA1_Part1_StarterKit/src/cs131/pa1/filter/sequential/LS.java" />
+        <option value="$PROJECT_DIR$/cs131a_PA1_Part1_StarterKit/cs131a_PA1_Part1_StarterKit/src/cs131/pa1/filter/sequential/CD.java" />
         <option value="$PROJECT_DIR$/cs131a_PA1_Part1_StarterKit/cs131a_PA1_Part1_StarterKit/src/cs131/pa1/filter/sequential/SequentialCommandBuilder.java" />
       </list>
     </option>
@@ -516,12 +515,12 @@
       <workItem from="1537884484195" duration="6671000" />
       <workItem from="1538057828845" duration="3333000" />
       <workItem from="1538073979895" duration="1217000" />
-      <workItem from="1538145629123" duration="2488000" />
+      <workItem from="1538145629123" duration="2754000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="13709000" />
+    <option name="totallyTimeSpent" value="13975000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-13" y="-13" width="3226" height="1746" extended-state="6" />
@@ -575,14 +574,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/cs131a_PA1_Part1_StarterKit/cs131a_PA1_Part1_StarterKit/src/cs131/pa1/filter/fliters/FILE.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1054">
-          <caret line="19" column="9" lean-forward="true" selection-start-line="19" selection-start-column="9" selection-end-line="19" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/cs131a_PA1_Part1_StarterKit/cs131a_PA1_Part1_StarterKit/src/cs131/pa1/filter/sequential/SequentialREPL.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="504">
@@ -939,14 +930,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cs131a_PA1_Part1_StarterKit/cs131a_PA1_Part1_StarterKit/src/cs131/pa1/filter/sequential/LS.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="36" lean-forward="false" selection-start-line="0" selection-start-column="36" selection-end-line="0" selection-end-column="36" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/cs131a_PA1_Part1_StarterKit/cs131a_PA1_Part1_StarterKit/src/cs131/pa1/filter/sequential/PWD.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-359">
@@ -974,10 +957,31 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/cs131a_PA1_Part1_StarterKit/cs131a_PA1_Part1_StarterKit/src/cs131/pa1/filter/sequential/LS.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="372">
+          <caret line="6" column="4" lean-forward="false" selection-start-line="6" selection-start-column="4" selection-end-line="6" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cs131a_PA1_Part1_StarterKit/cs131a_PA1_Part1_StarterKit/src/cs131/pa1/filter/sequential/CD.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="434">
+          <caret line="7" column="4" lean-forward="true" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="4" />
+          <folding>
+            <element signature="e#153#154#0" expanded="true" />
+            <element signature="e#175#176#0" expanded="true" />
+            <element signature="e#234#235#0" expanded="true" />
+            <element signature="e#252#253#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/cs131a_PA1_Part1_StarterKit/cs131a_PA1_Part1_StarterKit/src/cs131/pa1/filter/sequential/SequentialCommandBuilder.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1688">
-          <caret line="66" column="29" lean-forward="false" selection-start-line="66" selection-start-column="29" selection-end-line="66" selection-end-column="29" />
+        <state relative-caret-position="758">
+          <caret line="66" column="35" lean-forward="false" selection-start-line="66" selection-start-column="35" selection-end-line="66" selection-end-column="35" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

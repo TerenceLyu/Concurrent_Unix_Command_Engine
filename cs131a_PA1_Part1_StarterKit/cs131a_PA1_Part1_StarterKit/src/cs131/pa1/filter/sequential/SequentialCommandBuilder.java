@@ -57,15 +57,15 @@ public class SequentialCommandBuilder
 			case "wc":
 				filter = new WC();
 				break;
-//			case "":
-//				filter = new ;
-//				break;
-//			case "":
-//				filter = new ;
-//				break;
-//			case "":
-//				filter = new ;
-//				break;
+			case "pwd":
+				filter = new PWD();
+				break;
+			case "ls":
+				filter = new LS(s[1]);
+				break;
+			case "cd":
+				filter = new CD(s[1]);
+				break;
 			default:
 				System.out.print(Message.COMMAND_NOT_FOUND.with_parameter(s[0]));
 				return null;

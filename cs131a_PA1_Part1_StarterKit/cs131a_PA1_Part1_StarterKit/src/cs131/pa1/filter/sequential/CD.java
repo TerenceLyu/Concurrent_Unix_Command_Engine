@@ -1,15 +1,17 @@
 package cs131.pa1.filter.sequential;
 
-public class LS extends SequentialFilter
+public class CD extends SequentialFilter
 {
-	public LS(String param)
+	
+	public CD(String param)
 	{
 	
 	}
+	
 	@Override
 	public void process()
 	{
-	
+		super.process();
 	}
 	
 	@Override
