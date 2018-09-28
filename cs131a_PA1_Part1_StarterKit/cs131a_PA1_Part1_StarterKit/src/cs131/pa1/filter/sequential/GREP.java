@@ -23,4 +23,10 @@ public class GREP extends SequentialFilter
 		}
 		return null;
 	}
+	
+	@Override
+	public String toString()
+	{
+		return "grep " + word;
+	}
 }

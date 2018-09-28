@@ -35,8 +35,7 @@ public class CD extends SequentialFilter
 			SequentialREPL.currentWorkingDirectory += FILE_SEPARATOR + param;
 		}else
 		{
-			this.output = new LinkedList<>();
-			output.add(Message.DIRECTORY_NOT_FOUND.with_parameter("cd "+param));
+			System.out.print(Message.DIRECTORY_NOT_FOUND.with_parameter("cd "+param));
 		}
 		
 	}

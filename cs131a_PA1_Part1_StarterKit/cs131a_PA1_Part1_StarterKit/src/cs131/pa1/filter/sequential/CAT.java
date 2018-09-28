@@ -29,8 +29,9 @@ public class CAT extends SequentialFilter
 			}
 		} catch (Exception e)
 		{
-			e.printStackTrace();
+//			e.printStackTrace();
 			System.out.print(Message.FILE_NOT_FOUND.with_parameter(this.fileName));
+			SequentialREPL.error = true;
 		}
 	}
 

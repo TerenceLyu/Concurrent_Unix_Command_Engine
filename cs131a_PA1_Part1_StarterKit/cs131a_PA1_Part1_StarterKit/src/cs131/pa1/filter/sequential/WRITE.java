@@ -27,4 +27,10 @@ public class WRITE extends SequentialFilter
 
 		return null;
 	}
+	
+	@Override
+	public String toString()
+	{
+		return "> " + name;
+	}
 }

@@ -21,4 +21,10 @@ public class UNIQ extends SequentialFilter
 		}
 		return null;
 	}
+	
+	@Override
+	public String toString()
+	{
+		return "uniq";
+	}
 }

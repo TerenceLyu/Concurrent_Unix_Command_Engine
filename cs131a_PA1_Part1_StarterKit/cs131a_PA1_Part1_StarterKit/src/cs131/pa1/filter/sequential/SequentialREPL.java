@@ -4,7 +4,7 @@ import cs131.pa1.filter.Message;
 public class SequentialREPL
 {
 	static String currentWorkingDirectory;
-	
+	static boolean error = false;
 	public static void main(String[] args)
 	{
 		Scanner input = new Scanner(System.in);
@@ -24,8 +24,15 @@ public class SequentialREPL
 					Iterator iterator = listOfCommand.listIterator();
 					SequentialFilter curr = (SequentialFilter) iterator.next();
 					SequentialFilter prev;
-					curr.process();
-					while (iterator.hasNext())
+					try
+					{
+						curr.process();
+					}catch (Exception e)
+					{
+						error = true;
+						System.out.print(Message.REQUIRES_INPUT.with_parameter(curr.toString()));
+					}
+					while (iterator.hasNext()&&!error)
 					{
 						prev = curr;
 						curr = (SequentialFilter) iterator.next();

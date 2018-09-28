@@ -36,22 +36,43 @@ public class SequentialCommandBuilder
 
 	private static SequentialFilter constructFilterFromSubCommand(String subCommand)
 	{
-		String[] s = subCommand.split(" ");
+		String[] s = subCommand.trim().split(" ");
 //		System.out.println(Arrays.toString(s));
 		SequentialFilter filter = null;
 		switch (s[0])
 		{
 			case "cat":
-				filter = new CAT(s[1]);
+				try
+				{
+					filter = new CAT(s[1]);
+				}catch (Exception e)
+				{
+					SequentialREPL.error = true;
+					System.out.print(Message.REQUIRES_PARAMETER.with_parameter(s[0]));
+				}
 				break;
 			case "grep":
-				filter = new GREP(s[1]);
+				try
+				{
+					filter = new GREP(s[1]);
+				}catch (Exception e)
+				{
+					SequentialREPL.error = true;
+					System.out.print(Message.REQUIRES_PARAMETER.with_parameter(s[0]));
+				}
 				break;
 			case "uniq":
 				filter = new UNIQ();
 				break;
 			case ">":
-				filter = new WRITE(s[1]);
+				try
+				{
+					filter = new WRITE(s[1]);
+				}catch (Exception e)
+				{
+					SequentialREPL.error = true;
+					System.out.print(Message.REQUIRES_PARAMETER.with_parameter(s[0]));
+				}
 				break;
 			case "wc":
 				filter = new WC();
@@ -66,6 +87,7 @@ public class SequentialCommandBuilder
 				filter = new CD(s[1]);
 				break;
 			default:
+				SequentialREPL.error = true;
 				System.out.print(Message.COMMAND_NOT_FOUND.with_parameter(s[0]));
 				return null;
 		}
