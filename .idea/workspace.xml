@@ -2,20 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="119a49c3-ce97-4f9f-81e4-aa4b76b13ef3" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/cs131a_PA1_Part1_StarterKit/cs131a_PA1_Part1_StarterKit/src/cs131/pa1/filter/sequential/CD.java" afterPath="$PROJECT_DIR$/cs131a_PA1_Part1_StarterKit/cs131a_PA1_Part1_StarterKit/src/cs131/pa1/filter/sequential/CD.java" />
-      <change beforePath="$PROJECT_DIR$/cs131a_PA1_Part1_StarterKit/cs131a_PA1_Part1_StarterKit/src/cs131/pa1/filter/sequential/FILE.java" afterPath="$PROJECT_DIR$/cs131a_PA1_Part1_StarterKit/cs131a_PA1_Part1_StarterKit/src/cs131/pa1/filter/sequential/WRITE.java" />
-      <change beforePath="$PROJECT_DIR$/cs131a_PA1_Part1_StarterKit/cs131a_PA1_Part1_StarterKit/src/cs131/pa1/filter/sequential/LS.java" afterPath="$PROJECT_DIR$/cs131a_PA1_Part1_StarterKit/cs131a_PA1_Part1_StarterKit/src/cs131/pa1/filter/sequential/LS.java" />
-      <change beforePath="$PROJECT_DIR$/cs131a_PA1_Part1_StarterKit/cs131a_PA1_Part1_StarterKit/src/cs131/pa1/filter/sequential/PWD.java" afterPath="$PROJECT_DIR$/cs131a_PA1_Part1_StarterKit/cs131a_PA1_Part1_StarterKit/src/cs131/pa1/filter/sequential/PWD.java" />
-      <change beforePath="$PROJECT_DIR$/cs131a_PA1_Part1_StarterKit/cs131a_PA1_Part1_StarterKit/src/cs131/pa1/filter/sequential/SequentialCommandBuilder.java" afterPath="$PROJECT_DIR$/cs131a_PA1_Part1_StarterKit/cs131a_PA1_Part1_StarterKit/src/cs131/pa1/filter/sequential/SequentialCommandBuilder.java" />
-      <change beforePath="$PROJECT_DIR$/cs131a_PA1_Part1_StarterKit/cs131a_PA1_Part1_StarterKit/src/cs131/pa1/filter/sequential/SequentialREPL.java" afterPath="$PROJECT_DIR$/cs131a_PA1_Part1_StarterKit/cs131a_PA1_Part1_StarterKit/src/cs131/pa1/filter/sequential/SequentialREPL.java" />
-      <change beforePath="$PROJECT_DIR$/out/production/cs131a_PA1_Part1_StarterKit/cs131/pa1/filter/fliters/CAT.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/cs131a_PA1_Part1_StarterKit/cs131/pa1/filter/fliters/FILE.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/cs131a_PA1_Part1_StarterKit/cs131/pa1/filter/fliters/GREP.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/cs131a_PA1_Part1_StarterKit/cs131/pa1/filter/fliters/UNIQ.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/cs131a_PA1_Part1_StarterKit/cs131/pa1/filter/fliters/WC.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/cs131a_PA1_Part1_StarterKit/cs131/pa1/filter/sequential/SequentialCommandBuilder.class" afterPath="$PROJECT_DIR$/out/production/cs131a_PA1_Part1_StarterKit/cs131/pa1/filter/sequential/SequentialCommandBuilder.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/cs131a_PA1_Part1_StarterKit/cs131/pa1/filter/sequential/SequentialREPL.class" afterPath="$PROJECT_DIR$/out/production/cs131a_PA1_Part1_StarterKit/cs131/pa1/filter/sequential/SequentialREPL.class" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -36,8 +23,8 @@
       <file leaf-file-name="SequentialREPL.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/cs131a_PA1_Part1_StarterKit/cs131a_PA1_Part1_StarterKit/src/cs131/pa1/filter/sequential/SequentialREPL.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-186">
-              <caret line="12" column="8" lean-forward="false" selection-start-line="12" selection-start-column="8" selection-end-line="12" selection-end-column="8" />
+            <state relative-caret-position="273">
+              <caret line="34" column="0" lean-forward="false" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -60,14 +47,12 @@
       <file leaf-file-name="CD.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/cs131a_PA1_Part1_StarterKit/cs131a_PA1_Part1_StarterKit/src/cs131/pa1/filter/sequential/CD.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1389">
-              <caret line="31" column="54" lean-forward="true" selection-start-line="31" selection-start-column="54" selection-end-line="31" selection-end-column="54" />
+            <state relative-caret-position="558">
+              <caret line="14" column="41" lean-forward="false" selection-start-line="14" selection-start-column="41" selection-end-line="14" selection-end-column="41" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#240#241#0" expanded="true" />
-                <element signature="e#265#266#0" expanded="true" />
-                <element signature="e#955#956#0" expanded="true" />
-                <element signature="e#973#974#0" expanded="true" />
+                <element signature="e#1041#1042#0" expanded="true" />
+                <element signature="e#1059#1060#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -500,16 +485,15 @@
       <workItem from="1537884484195" duration="6671000" />
       <workItem from="1538057828845" duration="3333000" />
       <workItem from="1538073979895" duration="1217000" />
-      <workItem from="1538145629123" duration="5903000" />
+      <workItem from="1538145629123" duration="7188000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="17124000" />
+    <option name="totallyTimeSpent" value="18409000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-13" y="-13" width="3226" height="1746" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
@@ -519,12 +503,12 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32937062" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.29240596" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.29240596" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32931158" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18462038" sideWeight="0.5" order="5" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.18462038" sideWeight="0.5" order="5" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.7040454" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22128488" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -564,11 +548,11 @@
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.29240596" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.29240596" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32931158" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.18462038" sideWeight="0.5" order="5" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18462038" sideWeight="0.5" order="5" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.7040454" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
     </layout-to-restore>
@@ -958,16 +942,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cs131a_PA1_Part1_StarterKit/cs131a_PA1_Part1_StarterKit/src/cs131/pa1/filter/sequential/SequentialREPL.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-186">
-          <caret line="12" column="8" lean-forward="false" selection-start-line="12" selection-start-column="8" selection-end-line="12" selection-end-column="8" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/cs131a_PA1_Part1_StarterKit/cs131a_PA1_Part1_StarterKit/src/cs131/pa1/filter/sequential/SequentialCommandBuilder.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-2241">
@@ -988,14 +962,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cs131a_PA1_Part1_StarterKit/cs131a_PA1_Part1_StarterKit/src/cs131/pa1/filter/Filter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="248">
-          <caret line="4" column="45" lean-forward="false" selection-start-line="4" selection-start-column="31" selection-end-line="4" selection-end-column="45" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/cs131a_PA1_Part1_StarterKit/cs131a_PA1_Part1_StarterKit/src/cs131/pa1/filter/Message.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1054">
@@ -1004,16 +970,32 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cs131a_PA1_Part1_StarterKit/cs131a_PA1_Part1_StarterKit/src/cs131/pa1/filter/sequential/CD.java">
+    <entry file="file://$PROJECT_DIR$/cs131a_PA1_Part1_StarterKit/cs131a_PA1_Part1_StarterKit/src/cs131/pa1/filter/Filter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1389">
-          <caret line="31" column="54" lean-forward="true" selection-start-line="31" selection-start-column="54" selection-end-line="31" selection-end-column="54" />
+        <state relative-caret-position="248">
+          <caret line="4" column="45" lean-forward="false" selection-start-line="4" selection-start-column="31" selection-end-line="4" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cs131a_PA1_Part1_StarterKit/cs131a_PA1_Part1_StarterKit/src/cs131/pa1/filter/sequential/SequentialREPL.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="273">
+          <caret line="34" column="0" lean-forward="false" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#240#241#0" expanded="true" />
-            <element signature="e#265#266#0" expanded="true" />
-            <element signature="e#955#956#0" expanded="true" />
-            <element signature="e#973#974#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cs131a_PA1_Part1_StarterKit/cs131a_PA1_Part1_StarterKit/src/cs131/pa1/filter/sequential/CD.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="558">
+          <caret line="14" column="41" lean-forward="false" selection-start-line="14" selection-start-column="41" selection-end-line="14" selection-end-column="41" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1041#1042#0" expanded="true" />
+            <element signature="e#1059#1060#0" expanded="true" />
           </folding>
         </state>
       </provider>

@@ -1,5 +1,6 @@
 package cs131.pa1.filter.sequential;
 import java.io.File;
+import java.util.regex.Pattern;
 import java.util.Arrays;
 import java.util.LinkedList;
 import cs131.pa1.filter.Message;
@@ -11,12 +12,14 @@ public class CD extends SequentialFilter
 	public CD(String param)
 	{
 		this.param = param;
+		this.output = new LinkedList<>();
 	}
 	
 	@Override
 	public void process()
 	{
-		String[] path = SequentialREPL.currentWorkingDirectory.split(FILE_SEPARATOR);
+		String[] path = SequentialREPL.currentWorkingDirectory.split(Pattern.quote(File.separator));
+		
 		if (param.equals("."))
 		{
 			//do noting
