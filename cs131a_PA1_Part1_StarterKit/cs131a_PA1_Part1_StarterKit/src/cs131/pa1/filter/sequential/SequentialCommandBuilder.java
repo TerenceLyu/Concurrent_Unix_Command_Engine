@@ -1,9 +1,7 @@
 package cs131.pa1.filter.sequential;
 
-import java.util.Arrays;
-import java.util.LinkedList;
-import java.util.List;
-import cs131.pa1.filter.fliters.*;
+
+import java.util.*;
 import cs131.pa1.filter.Message;
 
 public class SequentialCommandBuilder
@@ -59,6 +57,15 @@ public class SequentialCommandBuilder
 			case "wc":
 				filter = new WC();
 				break;
+//			case "":
+//				filter = new ;
+//				break;
+//			case "":
+//				filter = new ;
+//				break;
+//			case "":
+//				filter = new ;
+//				break;
 			default:
 				System.out.print(Message.COMMAND_NOT_FOUND.with_parameter(s[0]));
 				return null;

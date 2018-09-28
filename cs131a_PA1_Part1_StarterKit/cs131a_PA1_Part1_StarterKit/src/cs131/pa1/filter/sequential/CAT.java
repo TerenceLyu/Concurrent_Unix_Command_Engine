@@ -1,6 +1,5 @@
-package cs131.pa1.filter.fliters;
+package cs131.pa1.filter.sequential;
 import cs131.pa1.filter.Message;
-import cs131.pa1.filter.sequential.SequentialFilter;
 import java.io.File;
 import java.util.LinkedList;
 import java.util.Scanner;

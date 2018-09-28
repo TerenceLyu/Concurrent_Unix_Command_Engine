@@ -1,6 +1,5 @@
 package cs131.pa1.filter.sequential;
 import java.util.*;
-import cs131.pa1.filter.sequential.SequentialCommandBuilder;
 import cs131.pa1.filter.Message;
 public class SequentialREPL
 {
@@ -10,6 +9,8 @@ public class SequentialREPL
 	{
 		Scanner input = new Scanner(System.in);
 		System.out.print(Message.WELCOME);
+		currentWorkingDirectory = System.getProperty("user.dir");
+		System.out.println(currentWorkingDirectory);
 		boolean exit = false;
 		while (!exit)
 		{

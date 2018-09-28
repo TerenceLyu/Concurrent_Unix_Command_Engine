@@ -1,6 +1,4 @@
-package cs131.pa1.filter.fliters;
-import cs131.pa1.filter.sequential.SequentialFilter;
-
+package cs131.pa1.filter.sequential;
 import java.util.LinkedList;
 
 public class WC extends SequentialFilter
