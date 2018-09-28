@@ -2,8 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="119a49c3-ce97-4f9f-81e4-aa4b76b13ef3" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/cs131a_PA1_Part1_StarterKit/cs131a_PA1_Part1_StarterKit/src/cs131/pa1/filter/sequential/CD.java" afterPath="$PROJECT_DIR$/cs131a_PA1_Part1_StarterKit/cs131a_PA1_Part1_StarterKit/src/cs131/pa1/filter/sequential/CD.java" />
+      <change beforePath="$PROJECT_DIR$/cs131a_PA1_Part1_StarterKit/cs131a_PA1_Part1_StarterKit/src/cs131/pa1/filter/sequential/FILE.java" afterPath="$PROJECT_DIR$/cs131a_PA1_Part1_StarterKit/cs131a_PA1_Part1_StarterKit/src/cs131/pa1/filter/sequential/WRITE.java" />
       <change beforePath="$PROJECT_DIR$/cs131a_PA1_Part1_StarterKit/cs131a_PA1_Part1_StarterKit/src/cs131/pa1/filter/sequential/LS.java" afterPath="$PROJECT_DIR$/cs131a_PA1_Part1_StarterKit/cs131a_PA1_Part1_StarterKit/src/cs131/pa1/filter/sequential/LS.java" />
+      <change beforePath="$PROJECT_DIR$/cs131a_PA1_Part1_StarterKit/cs131a_PA1_Part1_StarterKit/src/cs131/pa1/filter/sequential/PWD.java" afterPath="$PROJECT_DIR$/cs131a_PA1_Part1_StarterKit/cs131a_PA1_Part1_StarterKit/src/cs131/pa1/filter/sequential/PWD.java" />
       <change beforePath="$PROJECT_DIR$/cs131a_PA1_Part1_StarterKit/cs131a_PA1_Part1_StarterKit/src/cs131/pa1/filter/sequential/SequentialCommandBuilder.java" afterPath="$PROJECT_DIR$/cs131a_PA1_Part1_StarterKit/cs131a_PA1_Part1_StarterKit/src/cs131/pa1/filter/sequential/SequentialCommandBuilder.java" />
+      <change beforePath="$PROJECT_DIR$/cs131a_PA1_Part1_StarterKit/cs131a_PA1_Part1_StarterKit/src/cs131/pa1/filter/sequential/SequentialREPL.java" afterPath="$PROJECT_DIR$/cs131a_PA1_Part1_StarterKit/cs131a_PA1_Part1_StarterKit/src/cs131/pa1/filter/sequential/SequentialREPL.java" />
+      <change beforePath="$PROJECT_DIR$/out/production/cs131a_PA1_Part1_StarterKit/cs131/pa1/filter/fliters/CAT.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/cs131a_PA1_Part1_StarterKit/cs131/pa1/filter/fliters/FILE.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/cs131a_PA1_Part1_StarterKit/cs131/pa1/filter/fliters/GREP.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/cs131a_PA1_Part1_StarterKit/cs131/pa1/filter/fliters/UNIQ.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/cs131a_PA1_Part1_StarterKit/cs131/pa1/filter/fliters/WC.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/cs131a_PA1_Part1_StarterKit/cs131/pa1/filter/sequential/SequentialCommandBuilder.class" afterPath="$PROJECT_DIR$/out/production/cs131a_PA1_Part1_StarterKit/cs131/pa1/filter/sequential/SequentialCommandBuilder.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/cs131a_PA1_Part1_StarterKit/cs131/pa1/filter/sequential/SequentialREPL.class" afterPath="$PROJECT_DIR$/out/production/cs131a_PA1_Part1_StarterKit/cs131/pa1/filter/sequential/SequentialREPL.class" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -24,18 +36,8 @@
       <file leaf-file-name="SequentialREPL.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/cs131a_PA1_Part1_StarterKit/cs131a_PA1_Part1_StarterKit/src/cs131/pa1/filter/sequential/SequentialREPL.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="62">
-              <caret line="1" column="19" lean-forward="false" selection-start-line="1" selection-start-column="19" selection-end-line="1" selection-end-column="19" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SequentialCommandBuilder.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/cs131a_PA1_Part1_StarterKit/cs131a_PA1_Part1_StarterKit/src/cs131/pa1/filter/sequential/SequentialCommandBuilder.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="758">
-              <caret line="66" column="35" lean-forward="false" selection-start-line="66" selection-start-column="35" selection-end-line="66" selection-end-column="35" />
+            <state relative-caret-position="-186">
+              <caret line="12" column="8" lean-forward="false" selection-start-line="12" selection-start-column="8" selection-end-line="12" selection-end-column="8" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -43,46 +45,49 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CD.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/cs131a_PA1_Part1_StarterKit/cs131a_PA1_Part1_StarterKit/src/cs131/pa1/filter/sequential/CD.java">
+      <file leaf-file-name="SequentialCommandBuilder.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/cs131a_PA1_Part1_StarterKit/cs131a_PA1_Part1_StarterKit/src/cs131/pa1/filter/sequential/SequentialCommandBuilder.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="434">
-              <caret line="7" column="4" lean-forward="true" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="4" />
+            <state relative-caret-position="-2241">
+              <caret line="21" column="13" lean-forward="false" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
               <folding>
-                <element signature="e#153#154#0" expanded="true" />
-                <element signature="e#175#176#0" expanded="true" />
-                <element signature="e#234#235#0" expanded="true" />
-                <element signature="e#252#253#0" expanded="true" />
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CAT.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/cs131a_PA1_Part1_StarterKit/cs131a_PA1_Part1_StarterKit/src/cs131/pa1/filter/sequential/CAT.java">
+      <file leaf-file-name="CD.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/cs131a_PA1_Part1_StarterKit/cs131a_PA1_Part1_StarterKit/src/cs131/pa1/filter/sequential/CD.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="62">
-              <caret line="1" column="32" lean-forward="false" selection-start-line="1" selection-start-column="32" selection-end-line="1" selection-end-column="32" />
+            <state relative-caret-position="1389">
+              <caret line="31" column="54" lean-forward="true" selection-start-line="31" selection-start-column="54" selection-end-line="31" selection-end-column="54" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#240#241#0" expanded="true" />
+                <element signature="e#265#266#0" expanded="true" />
+                <element signature="e#955#956#0" expanded="true" />
+                <element signature="e#973#974#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Message.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/cs131a_PA1_Part1_StarterKit/cs131a_PA1_Part1_StarterKit/src/cs131/pa1/filter/Message.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1054">
+              <caret line="17" column="34" lean-forward="false" selection-start-line="17" selection-start-column="27" selection-end-line="17" selection-end-column="34" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="FILE.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/cs131a_PA1_Part1_StarterKit/cs131a_PA1_Part1_StarterKit/src/cs131/pa1/filter/sequential/FILE.java">
+      <file leaf-file-name="Filter.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/cs131a_PA1_Part1_StarterKit/cs131a_PA1_Part1_StarterKit/src/cs131/pa1/filter/Filter.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="62">
-              <caret line="1" column="32" lean-forward="false" selection-start-line="1" selection-start-column="32" selection-end-line="1" selection-end-column="32" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="GREP.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/cs131a_PA1_Part1_StarterKit/cs131a_PA1_Part1_StarterKit/src/cs131/pa1/filter/sequential/GREP.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="36" lean-forward="false" selection-start-line="0" selection-start-column="36" selection-end-line="0" selection-end-column="36" />
+            <state relative-caret-position="248">
+              <caret line="4" column="45" lean-forward="false" selection-start-line="4" selection-start-column="31" selection-end-line="4" selection-end-column="45" />
               <folding />
             </state>
           </provider>
@@ -91,9 +96,11 @@
       <file leaf-file-name="LS.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/cs131a_PA1_Part1_StarterKit/cs131a_PA1_Part1_StarterKit/src/cs131/pa1/filter/sequential/LS.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="372">
-              <caret line="6" column="4" lean-forward="false" selection-start-line="6" selection-start-column="4" selection-end-line="6" selection-end-column="4" />
-              <folding />
+            <state relative-caret-position="806">
+              <caret line="13" column="66" lean-forward="true" selection-start-line="13" selection-start-column="66" selection-end-line="13" selection-end-column="66" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -101,31 +108,8 @@
       <file leaf-file-name="PWD.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/cs131a_PA1_Part1_StarterKit/cs131a_PA1_Part1_StarterKit/src/cs131/pa1/filter/sequential/PWD.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-359">
-              <caret line="1" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-              <folding>
-                <element signature="e#119#120#0" expanded="true" />
-                <element signature="e#176#177#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="UNIQ.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/cs131a_PA1_Part1_StarterKit/cs131a_PA1_Part1_StarterKit/src/cs131/pa1/filter/sequential/UNIQ.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="124">
-              <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="WC.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/cs131a_PA1_Part1_StarterKit/cs131a_PA1_Part1_StarterKit/src/cs131/pa1/filter/sequential/WC.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1240">
-              <caret line="0" column="36" lean-forward="false" selection-start-line="0" selection-start-column="36" selection-end-line="0" selection-end-column="36" />
+            <state relative-caret-position="434">
+              <caret line="12" column="45" lean-forward="false" selection-start-line="12" selection-start-column="45" selection-end-line="12" selection-end-column="45" />
               <folding />
             </state>
           </provider>
@@ -163,16 +147,17 @@
         <option value="$PROJECT_DIR$/cs131a_PA1_Part1_StarterKit/cs131a_PA1_Part1_StarterKit/src/cs131/pa1/filter/sequential/fliters/CAT.java" />
         <option value="$PROJECT_DIR$/cs131a_PA1_Part1_StarterKit/cs131a_PA1_Part1_StarterKit/src/cs131/pa1/filter/sequential/fliters/FILE.java" />
         <option value="$PROJECT_DIR$/cs131a_PA1_Part1_StarterKit/cs131a_PA1_Part1_StarterKit/src/cs131/pa1/filter/sequential/fliters/PWD.java" />
-        <option value="$PROJECT_DIR$/cs131a_PA1_Part1_StarterKit/cs131a_PA1_Part1_StarterKit/src/cs131/pa1/filter/sequential/SequentialREPL.java" />
         <option value="$PROJECT_DIR$/cs131a_PA1_Part1_StarterKit/cs131a_PA1_Part1_StarterKit/src/cs131/pa1/filter/sequential/CAT.java" />
-        <option value="$PROJECT_DIR$/cs131a_PA1_Part1_StarterKit/cs131a_PA1_Part1_StarterKit/src/cs131/pa1/filter/sequential/FILE.java" />
         <option value="$PROJECT_DIR$/cs131a_PA1_Part1_StarterKit/cs131a_PA1_Part1_StarterKit/src/cs131/pa1/filter/sequential/GREP.java" />
-        <option value="$PROJECT_DIR$/cs131a_PA1_Part1_StarterKit/cs131a_PA1_Part1_StarterKit/src/cs131/pa1/filter/sequential/PWD.java" />
         <option value="$PROJECT_DIR$/cs131a_PA1_Part1_StarterKit/cs131a_PA1_Part1_StarterKit/src/cs131/pa1/filter/sequential/UNIQ.java" />
         <option value="$PROJECT_DIR$/cs131a_PA1_Part1_StarterKit/cs131a_PA1_Part1_StarterKit/src/cs131/pa1/filter/sequential/WC.java" />
+        <option value="$PROJECT_DIR$/cs131a_PA1_Part1_StarterKit/cs131a_PA1_Part1_StarterKit/src/cs131/pa1/filter/sequential/PWD.java" />
+        <option value="$PROJECT_DIR$/cs131a_PA1_Part1_StarterKit/cs131a_PA1_Part1_StarterKit/src/cs131/pa1/filter/sequential/SequentialREPL.java" />
         <option value="$PROJECT_DIR$/cs131a_PA1_Part1_StarterKit/cs131a_PA1_Part1_StarterKit/src/cs131/pa1/filter/sequential/LS.java" />
-        <option value="$PROJECT_DIR$/cs131a_PA1_Part1_StarterKit/cs131a_PA1_Part1_StarterKit/src/cs131/pa1/filter/sequential/CD.java" />
+        <option value="$PROJECT_DIR$/cs131a_PA1_Part1_StarterKit/cs131a_PA1_Part1_StarterKit/src/cs131/pa1/filter/sequential/FILE.java" />
+        <option value="$PROJECT_DIR$/cs131a_PA1_Part1_StarterKit/cs131a_PA1_Part1_StarterKit/src/cs131/pa1/filter/sequential/WRITE.java" />
         <option value="$PROJECT_DIR$/cs131a_PA1_Part1_StarterKit/cs131a_PA1_Part1_StarterKit/src/cs131/pa1/filter/sequential/SequentialCommandBuilder.java" />
+        <option value="$PROJECT_DIR$/cs131a_PA1_Part1_StarterKit/cs131a_PA1_Part1_StarterKit/src/cs131/pa1/filter/sequential/CD.java" />
       </list>
     </option>
   </component>
@@ -515,12 +500,12 @@
       <workItem from="1537884484195" duration="6671000" />
       <workItem from="1538057828845" duration="3333000" />
       <workItem from="1538073979895" duration="1217000" />
-      <workItem from="1538145629123" duration="2754000" />
+      <workItem from="1538145629123" duration="5903000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="13975000" />
+    <option name="totallyTimeSpent" value="17124000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-13" y="-13" width="3226" height="1746" extended-state="6" />
@@ -530,32 +515,63 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32937062" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32937062" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.29240596" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.29240596" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32931158" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18462038" sideWeight="0.5" order="4" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18462038" sideWeight="0.5" order="5" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22128488" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.7040454" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22128488" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="9" side_tool="false" content_ui="combo" />
+      <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="10" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
     </layout>
+    <layout-to-restore>
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32937062" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="10" side_tool="false" content_ui="combo" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22128488" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32937062" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.29240596" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32931158" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.18462038" sideWeight="0.5" order="5" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -578,7 +594,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="504">
           <caret line="18" column="48" lean-forward="false" selection-start-line="18" selection-start-column="48" selection-end-line="18" selection-end-column="48" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -594,6 +612,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="476">
           <caret line="17" column="34" lean-forward="false" selection-start-line="17" selection-start-column="27" selection-end-line="17" selection-end-column="34" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -627,6 +646,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="395">
           <caret line="17" column="34" lean-forward="false" selection-start-line="17" selection-start-column="27" selection-end-line="17" selection-end-column="34" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -641,7 +661,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="84">
           <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -699,7 +721,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="504">
           <caret line="18" column="48" lean-forward="false" selection-start-line="18" selection-start-column="48" selection-end-line="18" selection-end-column="48" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -715,6 +739,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="476">
           <caret line="17" column="34" lean-forward="false" selection-start-line="17" selection-start-column="27" selection-end-line="17" selection-end-column="34" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -741,13 +766,6 @@
         <state relative-caret-position="168">
           <caret line="6" column="44" lean-forward="false" selection-start-line="6" selection-start-column="40" selection-end-line="6" selection-end-column="44" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cs131a_PA1_Part1_StarterKit/cs131a_PA1_Part1_StarterKit/src/cs131/pa1/filter/Message.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="395">
-          <caret line="17" column="34" lean-forward="false" selection-start-line="17" selection-start-column="27" selection-end-line="17" selection-end-column="34" />
         </state>
       </provider>
     </entry>
@@ -880,14 +898,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cs131a_PA1_Part1_StarterKit/cs131a_PA1_Part1_StarterKit/src/cs131/pa1/filter/Filter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="744">
-          <caret line="12" column="33" lean-forward="false" selection-start-line="12" selection-start-column="33" selection-end-line="12" selection-end-column="33" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/cs131a_PA1_Part1_StarterKit/cs131a_PA1_Part1_StarterKit/src/cs131/pa1/filter/sequential/SequentialFilter.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1504">
@@ -898,46 +908,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cs131a_PA1_Part1_StarterKit/cs131a_PA1_Part1_StarterKit/src/cs131/pa1/filter/sequential/SequentialREPL.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="62">
-          <caret line="1" column="19" lean-forward="false" selection-start-line="1" selection-start-column="19" selection-end-line="1" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/cs131a_PA1_Part1_StarterKit/cs131a_PA1_Part1_StarterKit/src/cs131/pa1/filter/sequential/CAT.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="62">
           <caret line="1" column="32" lean-forward="false" selection-start-line="1" selection-start-column="32" selection-end-line="1" selection-end-column="32" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cs131a_PA1_Part1_StarterKit/cs131a_PA1_Part1_StarterKit/src/cs131/pa1/filter/sequential/FILE.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="62">
-          <caret line="1" column="32" lean-forward="false" selection-start-line="1" selection-start-column="32" selection-end-line="1" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cs131a_PA1_Part1_StarterKit/cs131a_PA1_Part1_StarterKit/src/cs131/pa1/filter/sequential/GREP.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="36" lean-forward="false" selection-start-line="0" selection-start-column="36" selection-end-line="0" selection-end-column="36" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cs131a_PA1_Part1_StarterKit/cs131a_PA1_Part1_StarterKit/src/cs131/pa1/filter/sequential/PWD.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-359">
-          <caret line="1" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-          <folding>
-            <element signature="e#119#120#0" expanded="true" />
-            <element signature="e#176#177#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -957,33 +932,88 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cs131a_PA1_Part1_StarterKit/cs131a_PA1_Part1_StarterKit/src/cs131/pa1/filter/sequential/LS.java">
+    <entry file="file://$PROJECT_DIR$/cs131a_PA1_Part1_StarterKit/cs131a_PA1_Part1_StarterKit/src/cs131/pa1/filter/sequential/GREP.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="372">
-          <caret line="6" column="4" lean-forward="false" selection-start-line="6" selection-start-column="4" selection-end-line="6" selection-end-column="4" />
+        <state relative-caret-position="0">
+          <caret line="0" column="36" lean-forward="false" selection-start-line="0" selection-start-column="36" selection-end-line="0" selection-end-column="36" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cs131a_PA1_Part1_StarterKit/cs131a_PA1_Part1_StarterKit/src/cs131/pa1/filter/sequential/CD.java">
+    <entry file="file://$PROJECT_DIR$/cs131a_PA1_Part1_StarterKit/cs131a_PA1_Part1_StarterKit/src/cs131/pa1/filter/sequential/PWD.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="434">
-          <caret line="7" column="4" lean-forward="true" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="4" />
+          <caret line="12" column="45" lean-forward="false" selection-start-line="12" selection-start-column="45" selection-end-line="12" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cs131a_PA1_Part1_StarterKit/cs131a_PA1_Part1_StarterKit/src/cs131/pa1/filter/sequential/WRITE.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="310">
+          <caret line="5" column="18" lean-forward="false" selection-start-line="5" selection-start-column="18" selection-end-line="5" selection-end-column="18" />
           <folding>
-            <element signature="e#153#154#0" expanded="true" />
-            <element signature="e#175#176#0" expanded="true" />
-            <element signature="e#234#235#0" expanded="true" />
-            <element signature="e#252#253#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cs131a_PA1_Part1_StarterKit/cs131a_PA1_Part1_StarterKit/src/cs131/pa1/filter/sequential/SequentialREPL.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-186">
+          <caret line="12" column="8" lean-forward="false" selection-start-line="12" selection-start-column="8" selection-end-line="12" selection-end-column="8" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/cs131a_PA1_Part1_StarterKit/cs131a_PA1_Part1_StarterKit/src/cs131/pa1/filter/sequential/SequentialCommandBuilder.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="758">
-          <caret line="66" column="35" lean-forward="false" selection-start-line="66" selection-start-column="35" selection-end-line="66" selection-end-column="35" />
+        <state relative-caret-position="-2241">
+          <caret line="21" column="13" lean-forward="false" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cs131a_PA1_Part1_StarterKit/cs131a_PA1_Part1_StarterKit/src/cs131/pa1/filter/sequential/LS.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="806">
+          <caret line="13" column="66" lean-forward="true" selection-start-line="13" selection-start-column="66" selection-end-line="13" selection-end-column="66" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cs131a_PA1_Part1_StarterKit/cs131a_PA1_Part1_StarterKit/src/cs131/pa1/filter/Filter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="248">
+          <caret line="4" column="45" lean-forward="false" selection-start-line="4" selection-start-column="31" selection-end-line="4" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cs131a_PA1_Part1_StarterKit/cs131a_PA1_Part1_StarterKit/src/cs131/pa1/filter/Message.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1054">
+          <caret line="17" column="34" lean-forward="false" selection-start-line="17" selection-start-column="27" selection-end-line="17" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cs131a_PA1_Part1_StarterKit/cs131a_PA1_Part1_StarterKit/src/cs131/pa1/filter/sequential/CD.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1389">
+          <caret line="31" column="54" lean-forward="true" selection-start-line="31" selection-start-column="54" selection-end-line="31" selection-end-column="54" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#240#241#0" expanded="true" />
+            <element signature="e#265#266#0" expanded="true" />
+            <element signature="e#955#956#0" expanded="true" />
+            <element signature="e#973#974#0" expanded="true" />
           </folding>
         </state>
       </provider>

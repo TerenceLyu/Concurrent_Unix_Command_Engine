@@ -10,7 +10,7 @@ public class SequentialREPL
 		Scanner input = new Scanner(System.in);
 		System.out.print(Message.WELCOME);
 		currentWorkingDirectory = System.getProperty("user.dir");
-		System.out.println(currentWorkingDirectory);
+		
 		boolean exit = false;
 		while (!exit)
 		{

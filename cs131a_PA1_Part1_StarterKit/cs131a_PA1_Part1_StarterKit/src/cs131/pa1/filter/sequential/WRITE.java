@@ -3,12 +3,12 @@ import cs131.pa1.filter.Message;
 import java.io.*;
 import java.util.LinkedList;
 
-public class FILE extends SequentialFilter
+public class WRITE extends SequentialFilter
 {
 	String name;
 	File f;
 	
-	public FILE(String name){
+	public WRITE(String name){
 		this.name = name;
 		this.f = new File(name);
 		this.output = new LinkedList<>();

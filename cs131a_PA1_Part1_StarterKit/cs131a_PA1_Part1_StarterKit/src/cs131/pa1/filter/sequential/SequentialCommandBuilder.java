@@ -20,7 +20,6 @@ public class SequentialCommandBuilder
 			{
 				return null;
 			}
-			
 		}
 		return list;
 	}
@@ -52,7 +51,7 @@ public class SequentialCommandBuilder
 				filter = new UNIQ();
 				break;
 			case ">":
-				filter = new FILE(s[1]);
+				filter = new WRITE(s[1]);
 				break;
 			case "wc":
 				filter = new WC();
@@ -61,7 +60,7 @@ public class SequentialCommandBuilder
 				filter = new PWD();
 				break;
 			case "ls":
-				filter = new LS(s[1]);
+				filter = new LS();
 				break;
 			case "cd":
 				filter = new CD(s[1]);
