@@ -39,7 +39,7 @@ public class SequentialREPL
 						curr.setPrevFilter(prev);
 						curr.process();
 					}
-					while (!curr.output.isEmpty())
+					while (!curr.output.isEmpty()&&!error)
 					{
 						System.out.println(curr.output.poll());
 					}

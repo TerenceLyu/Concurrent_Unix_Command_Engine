@@ -24,7 +24,9 @@ public class WorkingDirectoryTests {
 	
 	@Test
 	public void testBasicPwd(){
-		testInput("pwd\nexit");
+//		testInput("pwd\nexit");
+		testInput("pwd\n");
+		testInput("exit\n");
 		SequentialREPL.main(null);
 		String expectation = Message.NEWCOMMAND + "" + System.getProperty("user.dir") + "\n";
 		assertOutput(expectation);
