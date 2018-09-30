@@ -73,15 +73,15 @@ public class AllSequentialTests {
 	}
 
     private static void createFile(String fileName, String content){
-    	File f = new File(fileName);
-    	PrintWriter pw;
+        File f = new File(fileName);
+        PrintWriter pw;
 		try {
 			pw = new PrintWriter(f);
 		} catch (FileNotFoundException e) {
 			throw new RuntimeException("This should not happen; we are creating a new file.");
 		}
-    	pw.print(content);
-    	pw.close();
+        pw.print(content);
+        pw.close();
     }
     
     public static void assertOutput(String expected, ByteArrayOutputStream outContent){

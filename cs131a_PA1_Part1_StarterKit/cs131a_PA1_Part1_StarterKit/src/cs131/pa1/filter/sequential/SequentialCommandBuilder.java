@@ -88,7 +88,7 @@ public class SequentialCommandBuilder
 				break;
 			default:
 				SequentialREPL.error = true;
-				System.out.print(Message.COMMAND_NOT_FOUND.with_parameter(s[0]));
+				System.out.print(Message.COMMAND_NOT_FOUND.with_parameter(subCommand.trim()));
 				return null;
 		}
 		return filter;
