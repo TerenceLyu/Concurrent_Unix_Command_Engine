@@ -20,4 +20,10 @@ public class LS extends SequentialFilter
 	{
 		return null;
 	}
+	
+	@Override
+	public String toString()
+	{
+		return "ls";
+	}
 }

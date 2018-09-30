@@ -20,4 +20,10 @@ public class PWD extends SequentialFilter
 	{
 		return null;
 	}
+	
+	@Override
+	public String toString()
+	{
+		return "pwd";
+	}
 }

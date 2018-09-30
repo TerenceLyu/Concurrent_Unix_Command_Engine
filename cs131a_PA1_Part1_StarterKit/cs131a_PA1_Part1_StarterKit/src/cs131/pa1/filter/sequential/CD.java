@@ -45,4 +45,10 @@ public class CD extends SequentialFilter
 	{
 		return null;
 	}
+	
+	@Override
+	public String toString()
+	{
+		return "cd";
+	}
 }

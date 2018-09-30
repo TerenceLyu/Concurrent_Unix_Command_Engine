@@ -40,4 +40,10 @@ public class CAT extends SequentialFilter
 	{
 		return null;
 	}
+	
+	@Override
+	public String toString()
+	{
+		return "cat " + fileName;
+	}
 }

@@ -35,9 +35,22 @@ public class SequentialREPL
 					while (iterator.hasNext()&&!error)
 					{
 						prev = curr;
-						curr = (SequentialFilter) iterator.next();
-						curr.setPrevFilter(prev);
-						curr.process();
+						if (prev.toString().contains("cd")||prev.toString().contains(">"))
+						{
+							System.out.print(Message.CANNOT_HAVE_OUTPUT.with_parameter(prev.toString()));
+							error = true;
+						}else
+						{
+							curr = (SequentialFilter) iterator.next();
+							if (prev.toString().contains("cd")||prev.toString().contains("pwd")||prev.toString().contains("ls")||prev.toString().contains("cat"))
+							{
+								System.out.print(Message.CANNOT_HAVE_INPUT.with_parameter(curr.toString()));
+								error = true;
+							}
+							curr.setPrevFilter(prev);
+							curr.process();
+						}
+						
 					}
 					while (!curr.output.isEmpty()&&!error)
 					{

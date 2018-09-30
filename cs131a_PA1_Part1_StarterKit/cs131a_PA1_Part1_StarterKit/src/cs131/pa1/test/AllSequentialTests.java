@@ -28,15 +28,15 @@ public class AllSequentialTests {
     	createFile("fizz-buzz-10.txt", generateFizzBuzz(10));
     	createFile("fizz-buzz-100.txt", generateFizzBuzz(100));
     	createFile("fizz-buzz-10000.txt", generateFizzBuzz(10000));
-		createFile("fizz-buzz-1500000.txt", generateFizzBuzz(1500000));
+	createFile("fizz-buzz-1500000.txt", generateFizzBuzz(1500000));
     	createFile("ascii.txt", generateASCII());
     	createFile("pi.txt", generatePi());
     	
     	File f = new File("dir1/dir2/dir3/dir4");
     	f.mkdirs();
-		createFile("dir1/f1.txt", "FILE 1\nTHIS IS THE FIRST FILE.\nI HOPE YOU LIKE IT\n\n\nYOU DO????");
-		createFile("dir1/dir2/f2.txt", "FILE 2\nTHIS IS THE SECOND FILE.\nIT IS PRETTY SIMILAR\nI HOPE YOU LIKE IT\n\n\nDO YOU????");
-		createFile("dir1/dir2/dir3/dir4/f4.txt", "FILE 1\nTHIS IS THE LAST FILE.\nI HOPE YOU LIKED IT\n\n\nDID YOU????");
+	createFile("dir1/f1.txt", "FILE 1\nTHIS IS THE FIRST FILE.\nI HOPE YOU LIKE IT\n\n\nYOU DO????");
+	createFile("dir1/dir2/f2.txt", "FILE 2\nTHIS IS THE SECOND FILE.\nIT IS PRETTY SIMILAR\nI HOPE YOU LIKE IT\n\n\nDO YOU????");
+	createFile("dir1/dir2/dir3/dir4/f4.txt", "FILE 1\nTHIS IS THE LAST FILE.\nI HOPE YOU LIKED IT\n\n\nDID YOU????");
     	
     }
 
@@ -73,15 +73,15 @@ public class AllSequentialTests {
 	}
 
     private static void createFile(String fileName, String content){
-        File f = new File(fileName);
-        PrintWriter pw;
+    	File f = new File(fileName);
+    	PrintWriter pw;
 		try {
 			pw = new PrintWriter(f);
 		} catch (FileNotFoundException e) {
 			throw new RuntimeException("This should not happen; we are creating a new file.");
 		}
-        pw.print(content);
-        pw.close();
+    	pw.print(content);
+    	pw.close();
     }
     
     public static void assertOutput(String expected, ByteArrayOutputStream outContent){
