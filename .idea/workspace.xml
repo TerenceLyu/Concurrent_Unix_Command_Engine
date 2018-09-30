@@ -2,24 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="119a49c3-ce97-4f9f-81e4-aa4b76b13ef3" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/cs131a_PA1_Part1_StarterKit/cs131/pa1/filter/sequential/CAT.class" afterPath="$PROJECT_DIR$/out/production/cs131a_PA1_Part1_StarterKit/cs131/pa1/filter/sequential/CAT.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/cs131a_PA1_Part1_StarterKit/cs131/pa1/filter/sequential/CD.class" afterPath="$PROJECT_DIR$/out/production/cs131a_PA1_Part1_StarterKit/cs131/pa1/filter/sequential/CD.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/cs131a_PA1_Part1_StarterKit/cs131/pa1/filter/sequential/LS.class" afterPath="$PROJECT_DIR$/out/production/cs131a_PA1_Part1_StarterKit/cs131/pa1/filter/sequential/LS.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/cs131a_PA1_Part1_StarterKit/cs131/pa1/filter/sequential/PWD.class" afterPath="$PROJECT_DIR$/out/production/cs131a_PA1_Part1_StarterKit/cs131/pa1/filter/sequential/PWD.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/cs131a_PA1_Part1_StarterKit/cs131/pa1/filter/sequential/SequentialREPL.class" afterPath="$PROJECT_DIR$/out/production/cs131a_PA1_Part1_StarterKit/cs131/pa1/filter/sequential/SequentialREPL.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/cs131a_PA1_Part1_StarterKit/cs131/pa1/test/AllSequentialTests.class" afterPath="$PROJECT_DIR$/out/production/cs131a_PA1_Part1_StarterKit/cs131/pa1/test/AllSequentialTests.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/cs131a_PA1_Part1_StarterKit/cs131/pa1/test/WorkingDirectoryTests.class" afterPath="$PROJECT_DIR$/out/production/cs131a_PA1_Part1_StarterKit/cs131/pa1/test/WorkingDirectoryTests.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cs131a_PA1_Part1_StarterKit/cs131a_PA1_Part1_StarterKit/src/cs131/pa1/filter/sequential/CAT.java" afterPath="$PROJECT_DIR$/cs131a_PA1_Part1_StarterKit/cs131a_PA1_Part1_StarterKit/src/cs131/pa1/filter/sequential/CAT.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cs131a_PA1_Part1_StarterKit/cs131a_PA1_Part1_StarterKit/src/cs131/pa1/filter/sequential/CD.java" afterPath="$PROJECT_DIR$/cs131a_PA1_Part1_StarterKit/cs131a_PA1_Part1_StarterKit/src/cs131/pa1/filter/sequential/CD.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cs131a_PA1_Part1_StarterKit/cs131a_PA1_Part1_StarterKit/src/cs131/pa1/filter/sequential/LS.java" afterPath="$PROJECT_DIR$/cs131a_PA1_Part1_StarterKit/cs131a_PA1_Part1_StarterKit/src/cs131/pa1/filter/sequential/LS.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cs131a_PA1_Part1_StarterKit/cs131a_PA1_Part1_StarterKit/src/cs131/pa1/filter/sequential/PWD.java" afterPath="$PROJECT_DIR$/cs131a_PA1_Part1_StarterKit/cs131a_PA1_Part1_StarterKit/src/cs131/pa1/filter/sequential/PWD.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cs131a_PA1_Part1_StarterKit/cs131a_PA1_Part1_StarterKit/src/cs131/pa1/filter/sequential/SequentialREPL.java" afterPath="$PROJECT_DIR$/cs131a_PA1_Part1_StarterKit/cs131a_PA1_Part1_StarterKit/src/cs131/pa1/filter/sequential/SequentialREPL.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cs131a_PA1_Part1_StarterKit/cs131a_PA1_Part1_StarterKit/src/cs131/pa1/test/AllSequentialTests.java" afterPath="$PROJECT_DIR$/cs131a_PA1_Part1_StarterKit/cs131a_PA1_Part1_StarterKit/src/cs131/pa1/test/AllSequentialTests.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cs131a_PA1_Part1_StarterKit/cs131a_PA1_Part1_StarterKit/src/cs131/pa1/test/REPLTests.java" afterPath="$PROJECT_DIR$/cs131a_PA1_Part1_StarterKit/cs131a_PA1_Part1_StarterKit/src/cs131/pa1/test/REPLTests.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cs131a_PA1_Part1_StarterKit/cs131a_PA1_Part1_StarterKit/src/cs131/pa1/test/RedirectionTests.java" afterPath="$PROJECT_DIR$/cs131a_PA1_Part1_StarterKit/cs131a_PA1_Part1_StarterKit/src/cs131/pa1/test/RedirectionTests.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cs131a_PA1_Part1_StarterKit/cs131a_PA1_Part1_StarterKit/src/cs131/pa1/test/TextProcessingTests.java" afterPath="$PROJECT_DIR$/cs131a_PA1_Part1_StarterKit/cs131a_PA1_Part1_StarterKit/src/cs131/pa1/test/TextProcessingTests.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cs131a_PA1_Part1_StarterKit/cs131a_PA1_Part1_StarterKit/src/cs131/pa1/test/WorkingDirectoryTests.java" afterPath="$PROJECT_DIR$/cs131a_PA1_Part1_StarterKit/cs131a_PA1_Part1_StarterKit/src/cs131/pa1/test/WorkingDirectoryTests.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cs131a_PA1_Part1_StarterKit/cs131a_PA1_Part1_StarterKit/src/cs131/pa1/filter/sequential/WC.java" afterPath="$PROJECT_DIR$/cs131a_PA1_Part1_StarterKit/cs131a_PA1_Part1_StarterKit/src/cs131/pa1/filter/sequential/WC.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -58,7 +41,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="RedirectionTests.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="RedirectionTests.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/cs131a_PA1_Part1_StarterKit/cs131a_PA1_Part1_StarterKit/src/cs131/pa1/test/RedirectionTests.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="264">
@@ -92,7 +75,7 @@
         <entry file="file://$PROJECT_DIR$/cs131a_PA1_Part1_StarterKit/cs131a_PA1_Part1_StarterKit/src/cs131/pa1/filter/sequential/SequentialCommandBuilder.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="626">
-              <caret line="101" column="22" lean-forward="true" selection-start-line="101" selection-start-column="22" selection-end-line="101" selection-end-column="22" />
+              <caret line="101" column="22" lean-forward="false" selection-start-line="101" selection-start-column="22" selection-end-line="101" selection-end-column="22" />
               <folding />
             </state>
           </provider>
@@ -108,11 +91,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="WC.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="WC.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/cs131a_PA1_Part1_StarterKit/cs131a_PA1_Part1_StarterKit/src/cs131/pa1/filter/sequential/WC.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-748">
-              <caret line="21" column="25" lean-forward="true" selection-start-line="21" selection-start-column="25" selection-end-line="21" selection-end-column="25" />
+            <state relative-caret-position="-672">
+              <caret line="21" column="25" lean-forward="false" selection-start-line="21" selection-start-column="25" selection-end-line="21" selection-end-column="25" />
               <folding />
             </state>
           </provider>
@@ -173,7 +156,6 @@
         <option value="$PROJECT_DIR$/cs131a_PA1_Part1_StarterKit/cs131a_PA1_Part1_StarterKit/src/cs131/pa1/filter/sequential/fliters/FILE.java" />
         <option value="$PROJECT_DIR$/cs131a_PA1_Part1_StarterKit/cs131a_PA1_Part1_StarterKit/src/cs131/pa1/filter/sequential/fliters/PWD.java" />
         <option value="$PROJECT_DIR$/cs131a_PA1_Part1_StarterKit/cs131a_PA1_Part1_StarterKit/src/cs131/pa1/filter/sequential/FILE.java" />
-        <option value="$PROJECT_DIR$/cs131a_PA1_Part1_StarterKit/cs131a_PA1_Part1_StarterKit/src/cs131/pa1/filter/sequential/WC.java" />
         <option value="$PROJECT_DIR$/cs131a_PA1_Part1_StarterKit/cs131a_PA1_Part1_StarterKit/src/cs131/pa1/filter/sequential/UNIQ.java" />
         <option value="$PROJECT_DIR$/cs131a_PA1_Part1_StarterKit/cs131a_PA1_Part1_StarterKit/src/cs131/pa1/test/REPLTests.java" />
         <option value="$PROJECT_DIR$/cs131a_PA1_Part1_StarterKit/cs131a_PA1_Part1_StarterKit/src/cs131/pa1/filter/sequential/GREP.java" />
@@ -187,6 +169,7 @@
         <option value="$PROJECT_DIR$/cs131a_PA1_Part1_StarterKit/cs131a_PA1_Part1_StarterKit/src/cs131/pa1/filter/sequential/SequentialREPL.java" />
         <option value="$PROJECT_DIR$/cs131a_PA1_Part1_StarterKit/cs131a_PA1_Part1_StarterKit/src/cs131/pa1/filter/sequential/CAT.java" />
         <option value="$PROJECT_DIR$/cs131a_PA1_Part1_StarterKit/cs131a_PA1_Part1_StarterKit/src/cs131/pa1/test/AllSequentialTests.java" />
+        <option value="$PROJECT_DIR$/cs131a_PA1_Part1_StarterKit/cs131a_PA1_Part1_StarterKit/src/cs131/pa1/filter/sequential/WC.java" />
       </list>
     </option>
   </component>
@@ -876,7 +859,7 @@
       <workItem from="1538057828845" duration="3333000" />
       <workItem from="1538073979895" duration="1217000" />
       <workItem from="1538145629123" duration="10933000" />
-      <workItem from="1538331549616" duration="11390000" />
+      <workItem from="1538331549616" duration="11498000" />
     </task>
     <servers />
   </component>
@@ -913,7 +896,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="33544000" />
+    <option name="totallyTimeSpent" value="33652000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="2576" height="1416" extended-state="6" />
@@ -1208,7 +1191,7 @@
     <entry file="file://$PROJECT_DIR$/cs131a_PA1_Part1_StarterKit/cs131a_PA1_Part1_StarterKit/src/cs131/pa1/filter/sequential/SequentialCommandBuilder.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="626">
-          <caret line="101" column="22" lean-forward="true" selection-start-line="101" selection-start-column="22" selection-end-line="101" selection-end-column="22" />
+          <caret line="101" column="22" lean-forward="false" selection-start-line="101" selection-start-column="22" selection-end-line="101" selection-end-column="22" />
           <folding />
         </state>
       </provider>
@@ -1217,14 +1200,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="540">
           <caret line="27" column="22" lean-forward="false" selection-start-line="27" selection-start-column="22" selection-end-line="27" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cs131a_PA1_Part1_StarterKit/cs131a_PA1_Part1_StarterKit/src/cs131/pa1/filter/sequential/WC.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-748">
-          <caret line="21" column="25" lean-forward="true" selection-start-line="21" selection-start-column="25" selection-end-line="21" selection-end-column="25" />
           <folding />
         </state>
       </provider>
@@ -1275,6 +1250,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="264">
           <caret line="37" column="0" lean-forward="false" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cs131a_PA1_Part1_StarterKit/cs131a_PA1_Part1_StarterKit/src/cs131/pa1/filter/sequential/WC.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-672">
+          <caret line="21" column="25" lean-forward="false" selection-start-line="21" selection-start-column="25" selection-end-line="21" selection-end-column="25" />
           <folding />
         </state>
       </provider>
