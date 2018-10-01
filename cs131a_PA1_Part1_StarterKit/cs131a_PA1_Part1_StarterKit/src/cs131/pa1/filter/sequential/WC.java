@@ -34,10 +34,7 @@ public class WC extends SequentialFilter
 		//count character
 		for (int i = 0; i < curr.length(); i++)
 		{
-			if(Character.isLetter(curr.charAt(i)) || Character.isDigit(curr.charAt(i)))
-			{
-				character ++;
-			}
+			character ++;
 		}
 		//count word
 		boolean isWord = false;
@@ -45,16 +42,16 @@ public class WC extends SequentialFilter
 
 		for (int i = 0; i < curr.length(); i++)
 		{
-			if ((Character.isLetter(curr.charAt(i)) || Character.isDigit(curr.charAt(i))) && i != last)
+			if (curr.charAt(i) != ' ' && i != last)
 			{
 				isWord = true;
 			}
-			else if ((!Character.isLetter(curr.charAt(i)) && !Character.isDigit(curr.charAt(i))) && isWord)
+			else if (curr.charAt(i) == ' ' && isWord)
 			{
 				this.word++;
 				isWord = false;
 			}
-			else if ((Character.isLetter(curr.charAt(i)) || Character.isDigit(curr.charAt(i))) && i == last)
+			else if (curr.charAt(i) != ' ' && i == last)
 			{
 				this.word++;
 			}
