@@ -49,6 +49,6 @@ public class CD extends SequentialFilter
 	@Override
 	public String toString()
 	{
-		return "cd";
+		return "cd " + param;
 	}
 }

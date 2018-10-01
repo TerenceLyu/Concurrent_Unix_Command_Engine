@@ -1,6 +1,7 @@
 package cs131.pa1.filter.sequential;
 
 
+import java.nio.file.Path;
 import java.util.*;
 import cs131.pa1.filter.Message;
 
@@ -10,27 +11,100 @@ public class SequentialCommandBuilder
 	public static List<SequentialFilter> createFiltersFromCommand(String command)
 	{
 		List<SequentialFilter> list = new LinkedList<>();
+//		String[] commands = command.split(" ");
+//		String subCommand = "";
+//		String param = "";
+//		Boolean hasParam = false;
+//		for (String s: commands)
+//		{
+//
+//			if (s.equals("\\|"))
+//			{
+//				if (!build(list, subCommand + " " + param))
+//				{
+//					return null;
+//				}
+//				hasParam = false;
+//			}
+//			if (s.equals(">"))
+//			{
+//				if (!subCommand.equals(""))
+//				{
+//					if (!build(list, subCommand + " " + param))
+//					{
+//						return null;
+//					}
+//				}
+//				subCommand = s;
+//				hasParam = true;
+//			}
+//
+//			if (!hasParam)
+//			{
+//				subCommand = s;
+//				hasParam = true;
+//			}else
+//			{
+//				param += s + " ";
+//			}
+//		}
+//		if (!build(list, subCommand + " " + param))
+//		{
+//			return null;
+//		}
+		
+		
 		for (String s: command.split("\\|"))
 		{
-			String[] subcomand = s.split(">");
-			SequentialFilter sf = constructFilterFromSubCommand(subcomand[0]);
-			if (sf!=null)
+			if (s.contains(">"))
 			{
-				list.add(sf);
+				String firstCommand = s.substring(0, s.indexOf(">"));
+				
+				if (!firstCommand.equals(""))
+				{
+					if (!build(list, firstCommand))
+					{
+						return null;
+					}
+				}else
+				{
+					System.out.print(Message.REQUIRES_INPUT.with_parameter(s.substring(s.indexOf(">"))));
+					SequentialREPL.error = true;
+					return null;
+				}
+				
+				String temp = s.substring(s.indexOf(">"));
+				String[] subcommands = s.substring(s.indexOf(">")).replaceFirst(">", "").split(">");
+				for (int i = 0; i < subcommands.length; i++)
+				{
+					build(list, ">" + subcommands[i]);
+
+				}
+
 			}else
 			{
-				return null;
+				if (!build(list, s))
+				{
+					return null;
+				}
 			}
-			if (subcomand.length != 1)
-			{
-				
-				sf = constructFilterFromSubCommand(">" + subcomand[1]);
-				list.add(sf);
-			}
+
+
 		}
 		return list;
 	}
-
+	private static boolean build(List<SequentialFilter> l, String command)
+	{
+		SequentialFilter sf = constructFilterFromSubCommand(command);
+		if (sf!=null)
+		{
+			l.add(sf);
+		}else
+		{
+			return false;
+		}
+		return true;
+	}
 	private static SequentialFilter determineFinalFilter(String command)
 	{
 		return null;
@@ -43,43 +117,74 @@ public class SequentialCommandBuilder
 
 	private static SequentialFilter constructFilterFromSubCommand(String subCommand)
 	{
-		String[] s = subCommand.trim().split(" ");
-  
+		String param = "";
+		subCommand = subCommand.trim();
+		if (subCommand.contains(" "))
+		{
+			param = subCommand.substring(subCommand.indexOf(" ")+1);
+			subCommand = subCommand.substring(0, subCommand.indexOf(" "));
+		}
+//		System.out.println(subCommand);
+//		System.out.println(param);
 		SequentialFilter filter = null;
-		switch (s[0])
+		switch (subCommand)
 		{
 			case "cat":
-				try
+				if (!param.equals(""))
 				{
-					filter = new CAT(s[1]);
-				}catch (Exception e)
+					filter = new CAT(param);
+				}else
 				{
 					SequentialREPL.error = true;
-					System.out.print(Message.REQUIRES_PARAMETER.with_parameter(s[0]));
+					System.out.print(Message.REQUIRES_PARAMETER.with_parameter(subCommand));
 				}
+//				try
+//				{
+//					filter = new CAT(param);
+//				}catch (Exception e)
+//				{
+//					SequentialREPL.error = true;
+//					System.out.print(Message.REQUIRES_PARAMETER.with_parameter(subCommand));
+//				}
 				break;
 			case "grep":
-				try
+				if (!param.equals(""))
 				{
-					filter = new GREP(s[1]);
-				}catch (Exception e)
+					filter = new GREP(param);
+				}else
 				{
 					SequentialREPL.error = true;
-					System.out.print(Message.REQUIRES_PARAMETER.with_parameter(s[0]));
+					System.out.print(Message.REQUIRES_PARAMETER.with_parameter(subCommand));
 				}
+//				try
+//				{
+//					filter = new GREP(param);
+//				}catch (Exception e)
+//				{
+//					SequentialREPL.error = true;
+//					System.out.print(Message.REQUIRES_PARAMETER.with_parameter(subCommand));
+//				}
 				break;
 			case "uniq":
 				filter = new UNIQ();
 				break;
 			case ">":
-				try
+				if (!param.equals(""))
 				{
-					filter = new WRITE(s[1]);
-				}catch (Exception e)
+					filter = new WRITE(param);
+				}else
 				{
 					SequentialREPL.error = true;
-					System.out.print(Message.REQUIRES_PARAMETER.with_parameter(s[0]));
+					System.out.print(Message.REQUIRES_PARAMETER.with_parameter(subCommand));
 				}
+//				try
+//				{
+//					filter = new WRITE(param);
+//				}catch (Exception e)
+//				{
+//					SequentialREPL.error = true;
+//					System.out.print(Message.REQUIRES_PARAMETER.with_parameter(subCommand));
+//				}
 				break;
 			case "wc":
 				filter = new WC();
@@ -91,18 +196,26 @@ public class SequentialCommandBuilder
 				filter = new LS();
 				break;
 			case "cd":
-				try
+				if (!param.equals(""))
 				{
-					filter = new CD(s[1]);
-				}catch (Exception e)
+					filter = new CD(param);
+				}else
 				{
 					SequentialREPL.error = true;
-					System.out.print(Message.REQUIRES_PARAMETER.with_parameter(s[0]));
+					System.out.print(Message.REQUIRES_PARAMETER.with_parameter(subCommand));
 				}
+//				try
+//				{
+//					filter = new CD(param);
+//				}catch (Exception e)
+//				{
+//					SequentialREPL.error = true;
+//					System.out.print(Message.REQUIRES_PARAMETER.with_parameter(subCommand));
+//				}
 				break;
 			default:
 				SequentialREPL.error = true;
-				System.out.print(Message.COMMAND_NOT_FOUND.with_parameter(subCommand.trim()));
+				System.out.print(Message.COMMAND_NOT_FOUND.with_parameter(subCommand + " " + param));
 				return null;
 		}
 		return filter;

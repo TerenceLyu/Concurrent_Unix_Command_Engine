@@ -32,7 +32,7 @@ public class SequentialREPL
 						error = true;
 						System.out.print(Message.REQUIRES_INPUT.with_parameter(curr.toString()));
 					}
-					while (iterator.hasNext()&&!error)
+					while (iterator.hasNext() && !error)
 					{
 						prev = curr;
 						if (prev.toString().contains("cd")||prev.toString().contains(">"))
@@ -42,7 +42,7 @@ public class SequentialREPL
 						}else
 						{
 							curr = (SequentialFilter) iterator.next();
-							if (prev.toString().contains("cd")||prev.toString().contains("pwd")||prev.toString().contains("ls")||prev.toString().contains("cat"))
+							if (curr.toString().contains("cd")||curr.toString().contains("pwd")||curr.toString().contains("ls")||curr.toString().contains("cat"))
 							{
 								System.out.print(Message.CANNOT_HAVE_INPUT.with_parameter(curr.toString()));
 								error = true;
@@ -62,6 +62,7 @@ public class SequentialREPL
 			{
 				exit = true;
 			}
+			error = false;
 		}
 		System.out.print(Message.GOODBYE);
 	}
