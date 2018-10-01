@@ -8,18 +8,19 @@ public class CAT extends SequentialFilter
 {
 
 	private String fileName;
+	private String path;
 	public CAT(String fileName)
 	{
 		this.fileName = fileName;
+		this.path = SequentialREPL.currentWorkingDirectory + FILE_SEPARATOR + fileName;
 		this.output = new LinkedList<>();
 	}
 	@Override
 	public void process()
 	{
 //		System.out.println(new File(".").getAbsoluteFile());
-		File f = new File(this.fileName);
+		File f = new File(this.path);
 		
-		Scanner input;
 		try
 		{
 			Scanner scanner = new Scanner(f);

@@ -19,7 +19,11 @@ public class CD extends SequentialFilter
 	public void process()
 	{
 		String[] path = SequentialREPL.currentWorkingDirectory.split(Pattern.quote(File.separator));
-		
+//		String cwd = SequentialREPL.currentWorkingDirectory + FILE_SEPARATOR + param;
+//		System.out.println(cwd);
+//		System.out.println(new File(SequentialREPL.currentWorkingDirectory + FILE_SEPARATOR + param).isDirectory());
+//		File f = new File(param);
+//		boolean bool = f.isDirectory();
 		if (param.equals("."))
 		{
 			//do noting
@@ -29,7 +33,7 @@ public class CD extends SequentialFilter
 			path = Arrays.copyOf(path, path.length-1);
 			SequentialREPL.currentWorkingDirectory = String.join(FILE_SEPARATOR, path);
 			
-		}else if (new File(param).isDirectory())
+		}else if (new File(SequentialREPL.currentWorkingDirectory + FILE_SEPARATOR + param).isDirectory())
 		{
 			//go to the specified directory
 			SequentialREPL.currentWorkingDirectory += FILE_SEPARATOR + param;
