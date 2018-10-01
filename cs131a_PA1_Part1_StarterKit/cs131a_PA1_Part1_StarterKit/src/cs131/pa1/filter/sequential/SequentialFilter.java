@@ -22,7 +22,7 @@ public abstract class SequentialFilter extends Filter {
 			this.next = sequentialNext;
 			sequentialNext.prev = this;
 			if (this.output == null){
-				this.output = new LinkedList<String>();
+				this.output = new LinkedList<>();
 			}
 			sequentialNext.input = this.output;
 		} else {

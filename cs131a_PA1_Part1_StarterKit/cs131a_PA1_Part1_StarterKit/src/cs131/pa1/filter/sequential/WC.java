@@ -40,19 +40,15 @@ public class WC extends SequentialFilter
 		boolean isWord = false;
 		int last = curr.length() - 1;
 
-		for (int i = 0; i < curr.length(); i++)
-		{
-			if (curr.charAt(i) != ' ' && i != last)
-			{
+		for (int i = 0; i < curr.length(); i++) {
+			if (curr.charAt(i) != ' ' && i != last) {
 				isWord = true;
 			}
-			else if (curr.charAt(i) == ' ' && isWord)
-			{
+			else if (curr.charAt(i) == ' ' && isWord) {
 				this.word++;
 				isWord = false;
 			}
-			else if (curr.charAt(i) != ' ' && i == last)
-			{
+			else if (curr.charAt(i) != ' ' && i == last) {
 				this.word++;
 			}
 		}
@@ -60,8 +56,7 @@ public class WC extends SequentialFilter
 	}
 	
 	@Override
-	public String toString()
-	{
+	public String toString() {
 		return "wc";
 	}
 }

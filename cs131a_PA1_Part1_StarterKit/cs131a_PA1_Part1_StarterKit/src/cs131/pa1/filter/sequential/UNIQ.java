@@ -1,21 +1,17 @@
 package cs131.pa1.filter.sequential;
 import java.util.*;
 
-public class UNIQ extends SequentialFilter
-{
+public class UNIQ extends SequentialFilter {
 	HashSet<String> uniq;
 	
-	public UNIQ()
-	{
+	public UNIQ() {
 		this.output = new LinkedList<>();
 		this.uniq = new HashSet<>();
 	}
 	
 	@Override
-	protected String processLine(String line)
-	{
-		if(!uniq.contains(line))
-		{
+	protected String processLine(String line) {
+		if(!uniq.contains(line)) {
 			uniq.add(line);
 			return line;
 		}
@@ -23,8 +19,7 @@ public class UNIQ extends SequentialFilter
 	}
 	
 	@Override
-	public String toString()
-	{
+	public String toString() {
 		return "uniq";
 	}
 }

@@ -2,28 +2,23 @@ package cs131.pa1.filter.sequential;
 
 import java.util.LinkedList;
 
-public class PWD extends SequentialFilter
-{
+public class PWD extends SequentialFilter {
 	
 	@Override
-	public void process()
-	{
-		if (this.output == null)
-		{
+	public void process() {
+		if (this.output == null) {
 			this.output = new LinkedList<>();
 		}
 		output.add(SequentialREPL.currentWorkingDirectory);
 	}
 	
 	@Override
-	protected String processLine(String line)
-	{
+	protected String processLine(String line) {
 		return null;
 	}
 	
 	@Override
-	public String toString()
-	{
+	public String toString() {
 		return "pwd";
 	}
 }
