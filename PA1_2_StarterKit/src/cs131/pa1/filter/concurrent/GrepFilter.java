@@ -16,11 +16,21 @@ public class GrepFilter extends ConcurrentFilter {
 		}
 	}
 	
+	@Override
+	public boolean isDone() {
+		return this.prev.isDone() && super.isDone();
+	}
+	
 	public String processLine(String line) {
 		if(line.contains(toFind)) {
 			return line;
 		} else {
 			return null;
 		}
+	}
+	
+	@Override
+	public void run() {
+		this.process();
 	}
 }

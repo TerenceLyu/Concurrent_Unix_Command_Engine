@@ -36,6 +36,11 @@ public class RedirectFilter extends ConcurrentFilter {
 		}
 	}
 	
+	@Override
+	public boolean isDone() {
+		return this.prev.isDone() && super.isDone();
+	}
+	
 	public String processLine(String line) {
 		try {
 			fw.append(line + "\n");
@@ -47,5 +52,10 @@ public class RedirectFilter extends ConcurrentFilter {
 			System.out.printf(Message.FILE_NOT_FOUND.toString(), line);
 		}
 		return null;
+	}
+	
+	@Override
+	public void run() {
+		process();
 	}
 }

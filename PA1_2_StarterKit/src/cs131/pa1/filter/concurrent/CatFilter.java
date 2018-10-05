@@ -9,6 +9,17 @@ import cs131.pa1.filter.Message;
 public class CatFilter extends ConcurrentFilter{
 	private Scanner reader;
 	
+	@Override
+	public boolean isDone() {
+		return this.done;
+	}
+	
+	@Override
+	public void run() {
+		process();
+		this.done = true;
+	}
+	
 	public CatFilter(String line) throws Exception {
 		super();
 		

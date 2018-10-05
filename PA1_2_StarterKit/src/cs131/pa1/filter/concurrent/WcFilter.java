@@ -38,4 +38,14 @@ public class WcFilter extends ConcurrentFilter {
 			return null;
 		}
 	}
+	
+	@Override
+	public boolean isDone() {
+		return this.prev.isDone() && super.isDone();
+	}
+	
+	@Override
+	public void run() {
+		this.process();
+	}
 }

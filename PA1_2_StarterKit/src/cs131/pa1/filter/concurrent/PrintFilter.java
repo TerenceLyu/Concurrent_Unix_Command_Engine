@@ -11,8 +11,18 @@ public class PrintFilter extends ConcurrentFilter {
 		}
 	}
 	
+	@Override
+	public boolean isDone() {
+		return this.prev.isDone() && super.isDone();
+	}
+	
 	public String processLine(String line) {
 		System.out.println(line);
 		return null;
+	}
+	
+	@Override
+	public void run() {
+		this.process();
 	}
 }

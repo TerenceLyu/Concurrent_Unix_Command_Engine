@@ -19,4 +19,14 @@ public class UniqFilter extends ConcurrentFilter{
 			return line;
 		}
 	}
+	
+	@Override
+	public boolean isDone() {
+		return this.prev.isDone() && super.isDone();
+	}
+	
+	@Override
+	public void run() {
+		this.process();
+	}
 }

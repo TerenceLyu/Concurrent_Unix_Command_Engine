@@ -41,4 +41,9 @@ public class CdFilter extends ConcurrentFilter {
 		ConcurrentREPL.currentWorkingDirectory = dirToSet;
 		return null;
 	}
+	
+	@Override
+	public void run() {
+		process();
+	}
 }
