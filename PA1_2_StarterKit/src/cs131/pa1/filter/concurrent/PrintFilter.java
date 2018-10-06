@@ -1,5 +1,7 @@
 package cs131.pa1.filter.concurrent;
 
+import java.util.concurrent.TimeUnit;
+
 public class PrintFilter extends ConcurrentFilter {
 	public PrintFilter() {
 		super();
@@ -7,7 +9,9 @@ public class PrintFilter extends ConcurrentFilter {
 	
 	public void process() {
 		while(!isDone()) {
-			processLine(input.poll());
+			try {
+				processLine(input.poll(100, TimeUnit.MILLISECONDS));
+			}catch (InterruptedException e) {}
 		}
 	}
 	
@@ -17,7 +21,9 @@ public class PrintFilter extends ConcurrentFilter {
 	}
 	
 	public String processLine(String line) {
-		System.out.println(line);
+		if (line != null){
+			System.out.println(line);
+		}
 		return null;
 	}
 	

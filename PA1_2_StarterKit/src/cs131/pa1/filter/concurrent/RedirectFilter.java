@@ -3,6 +3,7 @@ package cs131.pa1.filter.concurrent;
 import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
+import java.util.concurrent.TimeUnit;
 
 import cs131.pa1.filter.Filter;
 import cs131.pa1.filter.Message;
@@ -32,7 +33,11 @@ public class RedirectFilter extends ConcurrentFilter {
 	
 	public void process() {
 		while(!isDone()) {
-			processLine(input.poll());
+			try {
+				processLine(input.poll(100, TimeUnit.MILLISECONDS));
+			}catch (InterruptedException e) {}
+			
+			
 		}
 	}
 	
@@ -42,14 +47,16 @@ public class RedirectFilter extends ConcurrentFilter {
 	}
 	
 	public String processLine(String line) {
-		try {
-			fw.append(line + "\n");
-			if(isDone()) {
-				fw.flush();
-				fw.close();
+		if (line != null){
+			try {
+				fw.append(line + "\n");
+				if(isDone()) {
+					fw.flush();
+					fw.close();
+				}
+			} catch (IOException e) {
+				System.out.printf(Message.FILE_NOT_FOUND.toString(), line);
 			}
-		} catch (IOException e) {
-			System.out.printf(Message.FILE_NOT_FOUND.toString(), line);
 		}
 		return null;
 	}

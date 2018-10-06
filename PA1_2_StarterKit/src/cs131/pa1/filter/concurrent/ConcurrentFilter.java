@@ -3,6 +3,7 @@ package cs131.pa1.filter.concurrent;
 //import java.util.Queue;
 import java.util.concurrent.BlockingQueue;
 import java.util.concurrent.LinkedBlockingQueue;
+import java.util.concurrent.TimeUnit;
 
 import cs131.pa1.filter.Filter;
 
@@ -40,11 +41,14 @@ public abstract class ConcurrentFilter extends Filter implements Runnable{
 		while (!this.isDone()){
 			String line = null;
 			try{
-				line = input.take();
+				line = input.poll(100, TimeUnit.MILLISECONDS);
 			}catch (InterruptedException e){}
 			
+			String processedLine = null;
+			if (line != null){
+				processedLine = processLine(line);
+			}
 			
-			String processedLine = processLine(line);
 			if (processedLine != null){
 				output.add(processedLine);
 			}
