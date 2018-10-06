@@ -20,29 +20,17 @@ public class WcFilter extends ConcurrentFilter {
 			return linecount + " " + wordcount + " " + charcount;
 		}
 		
-		if(isDone()) {
-			String[] wct = line.split(" ");
-			wordcount += wct.length;
-			String[] cct = line.split("|");
-			charcount += cct.length;
-			return ++linecount + " " + wordcount + " " + charcount;
-		} else {
-			linecount++;
-			String[] wct = line.split(" ");
-			wordcount += wct.length;
-			String[] cct = line.split("|");
-			charcount += cct.length;
-			return null;
-		}
-	}
-	
-	@Override
-	public boolean isDone() {
-		return this.prev.isDone() && super.isDone();
+		linecount++;
+		String[] wct = line.split(" ");
+		wordcount += wct.length;
+		String[] cct = line.split("|");
+		charcount += cct.length;
+		return null;
 	}
 	
 	@Override
 	public void run() {
 		this.process();
+		this.done = true;
 	}
 }

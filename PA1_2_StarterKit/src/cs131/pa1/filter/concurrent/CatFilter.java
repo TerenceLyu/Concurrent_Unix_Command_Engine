@@ -8,17 +8,8 @@ import cs131.pa1.filter.Message;
 
 public class CatFilter extends ConcurrentFilter{
 	private Scanner reader;
-	boolean done = false;
-	@Override
-	public boolean isDone() {
-		return this.done;
-	}
 	
-	@Override
-	public void run() {
-		process();
-		this.done = true;
-	}
+	
 	
 	public CatFilter(String line) throws Exception {
 		super();
@@ -53,6 +44,7 @@ public class CatFilter extends ConcurrentFilter{
 				break;
 			}
 			output.add(processedLine);
+			
 		}
 		reader.close();
 	}
@@ -63,5 +55,11 @@ public class CatFilter extends ConcurrentFilter{
 		} else {
 			return null;
 		}
+	}
+	
+	@Override
+	public void run() {
+		process();
+		this.done = true;
 	}
 }

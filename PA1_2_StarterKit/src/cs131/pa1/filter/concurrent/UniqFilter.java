@@ -20,13 +20,10 @@ public class UniqFilter extends ConcurrentFilter{
 		}
 	}
 	
-	@Override
-	public boolean isDone() {
-		return this.prev.isDone() && super.isDone();
-	}
 	
 	@Override
 	public void run() {
 		this.process();
+		this.done = true;
 	}
 }

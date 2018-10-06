@@ -7,7 +7,6 @@ import cs131.pa1.filter.Message;
 
 public class CdFilter extends ConcurrentFilter {
 	private String dirToSet;
-	boolean done = false;
 	
 	public CdFilter(String line) throws Exception {
 		super();
@@ -36,7 +35,6 @@ public class CdFilter extends ConcurrentFilter {
 	
 	public void process() {
 		processLine("");
-		this.done = true;
 	}
 	
 	public String processLine(String line) {
@@ -45,12 +43,8 @@ public class CdFilter extends ConcurrentFilter {
 	}
 	
 	@Override
-	public boolean isDone() {
-		return this.done;
-	}
-	
-	@Override
 	public void run() {
 		process();
+		this.done = true;
 	}
 }

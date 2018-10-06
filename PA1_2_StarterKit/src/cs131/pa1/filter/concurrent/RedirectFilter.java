@@ -32,32 +32,24 @@ public class RedirectFilter extends ConcurrentFilter {
 	}
 	
 	public void process() {
-//		System.out.println(input.size());
-		while(!isDone()) {
-			try {
-//				System.out.println(input.size());
-				processLine(input.poll(500, TimeUnit.MILLISECONDS));
-//				System.out.println(input.size());
-			}catch (InterruptedException e) {
-				e.printStackTrace();
-			}
+		while(!finished()) {
+			processLine(input.poll());
 		}
+		try
+		{
+			fw.flush();
+			fw.close();
+		}catch (IOException e){
+			e.printStackTrace();
+		}
+		
 	}
 	
-	@Override
-	public boolean isDone() {
-		return this.prev.isDone() && super.isDone();
-	}
 	
 	public String processLine(String line) {
 		if (line != null){
 			try {
-//				System.out.println(line);
 				fw.append(line + "\n");
-				if(isDone()) {
-					fw.flush();
-					fw.close();
-				}
 			} catch (IOException e) {
 				System.out.printf(Message.FILE_NOT_FOUND.toString(), line);
 			}
@@ -68,5 +60,6 @@ public class RedirectFilter extends ConcurrentFilter {
 	@Override
 	public void run() {
 		process();
+		this.done = true;
 	}
 }

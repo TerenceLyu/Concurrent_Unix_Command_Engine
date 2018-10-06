@@ -8,16 +8,9 @@ public class PrintFilter extends ConcurrentFilter {
 	}
 	
 	public void process() {
-		while(!isDone()) {
-			try {
-				processLine(input.poll(500, TimeUnit.MILLISECONDS));
-			}catch (InterruptedException e) {}
+		while(!finished()) {
+			processLine(this.input.poll());
 		}
-	}
-	
-	@Override
-	public boolean isDone() {
-		return this.prev.isDone() && super.isDone();
 	}
 	
 	public String processLine(String line) {
@@ -29,7 +22,7 @@ public class PrintFilter extends ConcurrentFilter {
 	
 	@Override
 	public void run() {
-		System.out.println("print run");
 		this.process();
+		this.done = true;
 	}
 }

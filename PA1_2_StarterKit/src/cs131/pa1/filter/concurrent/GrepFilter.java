@@ -16,10 +16,6 @@ public class GrepFilter extends ConcurrentFilter {
 		}
 	}
 	
-	@Override
-	public boolean isDone() {
-		return this.prev.isDone() && super.isDone();
-	}
 	
 	public String processLine(String line) {
 		if(line.contains(toFind)) {
@@ -32,5 +28,6 @@ public class GrepFilter extends ConcurrentFilter {
 	@Override
 	public void run() {
 		this.process();
+		this.done = true;
 	}
 }

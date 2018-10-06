@@ -1,10 +1,7 @@
 package cs131.pa1.filter.concurrent;
-//import java.util.LinkedList;
-//import java.util.Queue;
+
 import java.util.concurrent.BlockingQueue;
 import java.util.concurrent.LinkedBlockingQueue;
-import java.util.concurrent.TimeUnit;
-
 import cs131.pa1.filter.Filter;
 
 
@@ -12,6 +9,8 @@ public abstract class ConcurrentFilter extends Filter implements Runnable{
 	
 	protected BlockingQueue<String> input;
 	protected BlockingQueue<String> output;
+	boolean done = false;
+	
 	@Override
 	public void setPrevFilter(Filter prevFilter) {
 		prevFilter.setNextFilter(this);
@@ -37,12 +36,8 @@ public abstract class ConcurrentFilter extends Filter implements Runnable{
 	}
 	
 	public void process() {
-		while (!this.isDone()){
-			String line = null;
-			try{
-				line = input.poll(500, TimeUnit.MILLISECONDS);
-			}catch (InterruptedException e){}
-			
+		while (!finished()){
+			String line = input.poll();
 			String processedLine = null;
 			if (line != null){
 				processedLine = processLine(line);
@@ -56,9 +51,12 @@ public abstract class ConcurrentFilter extends Filter implements Runnable{
 	
 	@Override
 	public boolean isDone() {
-		return input.size() == 0;
+		return this.done;
 	}
 	
+	public boolean finished() {
+		return this.prev.isDone() && this.input.size() == 0;
+	}
 	protected abstract String processLine(String line);
 	
 }

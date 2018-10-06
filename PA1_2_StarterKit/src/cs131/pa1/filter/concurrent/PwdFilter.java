@@ -1,7 +1,6 @@
 package cs131.pa1.filter.concurrent;
 
 public class PwdFilter extends ConcurrentFilter {
-	boolean done = false;
 	public PwdFilter() {
 		super();
 	}
@@ -16,12 +15,8 @@ public class PwdFilter extends ConcurrentFilter {
 	}
 	
 	@Override
-	public boolean isDone() {
-		return this.done;
-	}
-	
-	@Override
 	public void run() {
 		process();
+		this.done = true;
 	}
 }
