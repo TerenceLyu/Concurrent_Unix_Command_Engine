@@ -10,11 +10,8 @@ public class WcFilter extends ConcurrentFilter {
 	}
 	
 	public void process() {
-		if(isDone()) {
-			output.add(processLine(null));
-		} else {
-			super.process();
-		}
+		super.process();
+		output.add(processLine(null));
 	}
 	
 	public String processLine(String line) {

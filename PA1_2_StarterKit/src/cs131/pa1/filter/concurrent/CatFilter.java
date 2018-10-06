@@ -8,7 +8,7 @@ import cs131.pa1.filter.Message;
 
 public class CatFilter extends ConcurrentFilter{
 	private Scanner reader;
-	
+	boolean done = false;
 	@Override
 	public boolean isDone() {
 		return this.done;

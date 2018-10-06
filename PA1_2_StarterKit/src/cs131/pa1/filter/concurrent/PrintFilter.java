@@ -10,7 +10,7 @@ public class PrintFilter extends ConcurrentFilter {
 	public void process() {
 		while(!isDone()) {
 			try {
-				processLine(input.poll(100, TimeUnit.MILLISECONDS));
+				processLine(input.poll(500, TimeUnit.MILLISECONDS));
 			}catch (InterruptedException e) {}
 		}
 	}
@@ -29,6 +29,7 @@ public class PrintFilter extends ConcurrentFilter {
 	
 	@Override
 	public void run() {
+		System.out.println("print run");
 		this.process();
 	}
 }

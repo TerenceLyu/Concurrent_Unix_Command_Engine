@@ -12,7 +12,6 @@ public abstract class ConcurrentFilter extends Filter implements Runnable{
 	
 	protected BlockingQueue<String> input;
 	protected BlockingQueue<String> output;
-	protected boolean done = false;
 	@Override
 	public void setPrevFilter(Filter prevFilter) {
 		prevFilter.setNextFilter(this);
@@ -41,7 +40,7 @@ public abstract class ConcurrentFilter extends Filter implements Runnable{
 		while (!this.isDone()){
 			String line = null;
 			try{
-				line = input.poll(100, TimeUnit.MILLISECONDS);
+				line = input.poll(500, TimeUnit.MILLISECONDS);
 			}catch (InterruptedException e){}
 			
 			String processedLine = null;

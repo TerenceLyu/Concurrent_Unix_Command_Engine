@@ -32,12 +32,15 @@ public class RedirectFilter extends ConcurrentFilter {
 	}
 	
 	public void process() {
+//		System.out.println(input.size());
 		while(!isDone()) {
 			try {
-				processLine(input.poll(100, TimeUnit.MILLISECONDS));
-			}catch (InterruptedException e) {}
-			
-			
+//				System.out.println(input.size());
+				processLine(input.poll(500, TimeUnit.MILLISECONDS));
+//				System.out.println(input.size());
+			}catch (InterruptedException e) {
+				e.printStackTrace();
+			}
 		}
 	}
 	
@@ -49,6 +52,7 @@ public class RedirectFilter extends ConcurrentFilter {
 	public String processLine(String line) {
 		if (line != null){
 			try {
+//				System.out.println(line);
 				fw.append(line + "\n");
 				if(isDone()) {
 					fw.flush();
