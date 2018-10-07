@@ -13,7 +13,7 @@ import java.util.Scanner;
 public class ConcurrentREPL {
 
 	static String currentWorkingDirectory;
-	
+
 	public static void main(String[] args){
 		currentWorkingDirectory = System.getProperty("user.dir");
 		Scanner s = new Scanner(System.in);
@@ -28,13 +28,13 @@ public class ConcurrentREPL {
 				break;
 			} else if(command.equals("repl_jobs")) {
 				int index = 0;
-				Pair<ConcurrentFilter, String> curr = jobs.get(index);
+				Pair<Thread, String> curr = jobs.get(index);
 				int i = 1;
 				while(curr != null) {
-					if(!curr.getKey().isDone()){
-						System.out.println(i + ". " + curr.getValue() + " &");
-						i ++;
+					if(!curr.getKey().isAlive()){
+						System.out.println("\t" + i + ". " + curr.getValue() + " &");
 					}
+					i ++;
 					index ++;
 					if(index < jobs.size()){
 						curr = jobs.get(index);
@@ -42,12 +42,28 @@ public class ConcurrentREPL {
 						curr = null;
 					}
 				}
-			} else if(command.contains("kill")) {
+			} else if(command.startsWith("kill")) {
 				command.trim();
-				String subCommand = command.substring(5);
-				int num = Integer.parseInt(subCommand);
-				Pair<ConcurrentFilter, String> p = jobs.get(num - 1);
-				p.getKey().done = true;
+				String[] splitResult = command.split(" ");
+				if(splitResult.length < 2){
+					System.out.printf(Message.REQUIRES_PARAMETER.with_parameter("kill"));
+				}else if(!Character.isDigit(splitResult[1].charAt(0))){
+					System.out.printf(Message.INVALID_PARAMETER.with_parameter(command));
+				}else if(Character.isDigit(splitResult[1].charAt(0))){
+					int num = Integer.parseInt(splitResult[1]);
+					Pair<Thread, String> p = jobs.get(num - 1);
+					p.getKey().interrupt();
+				}
+
+
+//				String subCommand = command.substring(5);
+//				int num;
+//				try{
+//					num = Integer.parseInt(subCommand);
+//				} catch(NumberFormatException e) {
+//					return;
+//				}
+
 			} else if(!command.trim().equals("")) {
 				boolean backGround;
 				if(command.charAt(command.length() - 1) == '&'){
@@ -64,7 +80,7 @@ public class ConcurrentREPL {
 					thd = new Thread(filterlist);
 					thd.start();
 					if(filterlist.getNext() == null){
-						Pair<ConcurrentFilter, String> p = new Pair(filterlist, command);
+						Pair<Thread, String> p = new Pair(thd, command);
 						jobs.add(p);
 					}
 					filterlist = (ConcurrentFilter) filterlist.getNext();
