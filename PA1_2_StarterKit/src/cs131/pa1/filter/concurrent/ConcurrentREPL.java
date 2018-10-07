@@ -18,7 +18,19 @@ public class ConcurrentREPL {
 			command = s.nextLine();
 			if(command.equals("exit")) {
 				break;
-			} else if(!command.trim().equals("")) {
+			}
+//			else if(command.equals("repl_jobs")) {
+//
+//			}
+			else if(!command.trim().equals("")) {
+				boolean backGround;
+				if(command.charAt(command.length() - 1) == '&'){
+					backGround = true;
+					command = command.substring(0, command.length() - 2);
+					command.trim();
+				}else {
+					backGround = false;
+				}
 				//building the filters list from the command
 				ConcurrentFilter filterlist = ConcurrentCommandBuilder.createFiltersFromCommand(command);
 				Thread thd = null;
@@ -27,12 +39,13 @@ public class ConcurrentREPL {
 					thd.start();
 					filterlist = (ConcurrentFilter) filterlist.getNext();
 				}
-				if (thd != null) {
-					try{
-						thd.join();
-					}catch (InterruptedException e){}
+				if(!backGround) {
+					if (thd != null) {
+						try{
+							thd.join();
+						}catch (InterruptedException e){}
+					}
 				}
-				
 			}
 		}
 		s.close();
