@@ -36,7 +36,7 @@ public abstract class ConcurrentFilter extends Filter implements Runnable{
 	}
 	
 	public void process() {
-		while (!finished()){
+		while (!finished()&&!isDone()){
 			String line = input.poll();
 			String processedLine = null;
 			if (line != null){
@@ -48,7 +48,9 @@ public abstract class ConcurrentFilter extends Filter implements Runnable{
 			}
 		}	
 	}
-	
+	public void kill(){
+		this.done = true;
+	}
 	@Override
 	public boolean isDone() {
 		return this.done;

@@ -19,7 +19,7 @@ public class ConcurrentREPL {
 		Scanner s = new Scanner(System.in);
 		System.out.print(Message.WELCOME);
 		String command;
-		LinkedList<Pair> jobs = new LinkedList<>();
+		LinkedList<Pair<ConcurrentFilter, String>> jobs = new LinkedList<>();
 		while(true) {
 			//obtaining the command from the user
 			System.out.print(Message.NEWCOMMAND);
@@ -28,10 +28,10 @@ public class ConcurrentREPL {
 				break;
 			} else if(command.equals("repl_jobs")) {
 				int index = 0;
-				Pair<Thread, String> curr = jobs.get(index);
+				Pair<ConcurrentFilter, String> curr = jobs.get(index);
 				int i = 1;
 				while(curr != null) {
-					if(curr.getKey().isAlive()){
+					if(!curr.getKey().isDone()){
 						System.out.println("\t" + i + ". " + curr.getValue() + " &");
 					}
 					i ++;
@@ -51,19 +51,9 @@ public class ConcurrentREPL {
 					System.out.printf(Message.INVALID_PARAMETER.with_parameter(command));
 				}else if(Character.isDigit(splitResult[1].charAt(0))){
 					int num = Integer.parseInt(splitResult[1]);
-					Pair<Thread, String> p = jobs.get(num - 1);
-					p.getKey().interrupt();
+					Pair<ConcurrentFilter, String> p = jobs.get(num - 1);
+					p.getKey().kill();
 				}
-
-
-//				String subCommand = command.substring(5);
-//				int num;
-//				try{
-//					num = Integer.parseInt(subCommand);
-//				} catch(NumberFormatException e) {
-//					return;
-//				}
-
 			} else if(!command.trim().equals("")) {
 				boolean backGround;
 				if(command.charAt(command.length() - 1) == '&'){
@@ -79,8 +69,8 @@ public class ConcurrentREPL {
 				while(filterlist != null) {
 					thd = new Thread(filterlist);
 					thd.start();
-					if(filterlist.getNext() == null &&backGround){
-						Pair<Thread, String> p = new Pair(thd, command);
+					if(filterlist.getNext() == null && backGround){
+						Pair<ConcurrentFilter, String> p = new Pair(filterlist, command);
 						jobs.add(p);
 					}
 					filterlist = (ConcurrentFilter) filterlist.getNext();

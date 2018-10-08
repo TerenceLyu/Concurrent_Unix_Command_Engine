@@ -32,7 +32,7 @@ public class RedirectFilter extends ConcurrentFilter {
 	}
 	
 	public void process() {
-		while(!finished()) {
+		while(!finished()&&!isDone()) {
 			processLine(input.poll());
 		}
 		try

@@ -8,7 +8,7 @@ public class PrintFilter extends ConcurrentFilter {
 	}
 	
 	public void process() {
-		while(!finished()) {
+		while(!finished()&&!isDone()) {
 			processLine(this.input.poll());
 		}
 	}
