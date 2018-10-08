@@ -31,7 +31,7 @@ public class ConcurrentREPL {
 				Pair<Thread, String> curr = jobs.get(index);
 				int i = 1;
 				while(curr != null) {
-					if(!curr.getKey().isAlive()){
+					if(curr.getKey().isAlive()){
 						System.out.println("\t" + i + ". " + curr.getValue() + " &");
 					}
 					i ++;
@@ -79,7 +79,7 @@ public class ConcurrentREPL {
 				while(filterlist != null) {
 					thd = new Thread(filterlist);
 					thd.start();
-					if(filterlist.getNext() == null){
+					if(filterlist.getNext() == null &&backGround){
 						Pair<Thread, String> p = new Pair(thd, command);
 						jobs.add(p);
 					}
