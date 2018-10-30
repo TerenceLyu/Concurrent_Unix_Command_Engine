@@ -12,17 +12,20 @@ public class ConcreteFactory implements Factory {
 
     @Override
     public Tunnel createNewBasicTunnel(String label){
-    		throw new UnsupportedOperationException("Not supported yet.");    
+    	return new BasicTunnel(label);
+//    		throw new UnsupportedOperationException("Not supported yet.");
     }
 
     @Override
     public Vehicle createNewCar(String label, Direction direction){
-    		throw new UnsupportedOperationException("Not supported yet.");    
+    	return new Car(label, direction);
+//    		throw new UnsupportedOperationException("Not supported yet.");
     }
 
     @Override
     public Vehicle createNewSled(String label, Direction direction){
-    		throw new UnsupportedOperationException("Not supported yet.");    
+    	return new Sled(label, direction);
+//    		throw new UnsupportedOperationException("Not supported yet.");
     }
 
     @Override
@@ -32,7 +35,8 @@ public class ConcreteFactory implements Factory {
 
 	@Override
 	public Vehicle createNewAmbulance(String label, Direction direction) {
-		throw new UnsupportedOperationException("Not supported yet.");
+    	return new Ambulance(label, direction);
+//		throw new UnsupportedOperationException("Not supported yet.");
 	}
 
 	@Override
