@@ -28,7 +28,7 @@ public class PriorityScheduler extends Tunnel{
 						queue.add(vehicle);
 					}
 					try {
-						vehicle.wait();
+						wait();
 					}catch (InterruptedException e){}
 				}
 			}
@@ -46,7 +46,7 @@ public class PriorityScheduler extends Tunnel{
 				queue.add(vehicle);
 			}
 			try {
-				vehicle.wait();
+				wait();
 			}catch (InterruptedException e){}
 		}
 		
@@ -58,7 +58,7 @@ public class PriorityScheduler extends Tunnel{
 		map.get(vehicle).exitTunnelInner(vehicle);
 		map.remove(vehicle);
 		if (queue.size()!=0){
-			queue.peek().notify();
+			notify();
 		}
 	}
 }
