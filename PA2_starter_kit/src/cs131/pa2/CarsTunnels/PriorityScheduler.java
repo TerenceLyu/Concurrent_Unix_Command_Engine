@@ -16,12 +16,14 @@ public class PriorityScheduler extends Tunnel{
 	public PriorityScheduler(String name, Collection<Tunnel> tunnels, Log log){
 		super(name, log);
 		this.tunnels = tunnels;
-		this.queue = new PriorityQueue<>(20,(a,b) -> b.getPriority()-a.getPriority());
+		this.queue = new PriorityQueue<>(20, (a, b) -> b.getPriority() - a.getPriority());
 	}
 	
 	@Override
 	public synchronized boolean tryToEnterInner(Vehicle vehicle) {
 		while (true){
+			//if the priority of the vehicle is not the largest
+			//add it to the queue and let it wait
 			if (this.queue.size() != 0){
 				if (this.queue.peek().getPriority() >= vehicle.getPriority()){
 					if (!queue.contains(vehicle)){
@@ -32,7 +34,8 @@ public class PriorityScheduler extends Tunnel{
 					}catch (InterruptedException e){}
 				}
 			}
-			
+
+			//add the vehicle to one of the tunnels
 			for (Tunnel tunnel: tunnels)
 			{
 				if (tunnel.tryToEnterInner(vehicle)){
@@ -41,7 +44,9 @@ public class PriorityScheduler extends Tunnel{
 					return true;
 				}
 			}
-			
+
+			//if the queue is empty but no tunnel to enter
+			//add the vehicle to the queue
 			if (!queue.contains(vehicle)){
 				queue.add(vehicle);
 			}
