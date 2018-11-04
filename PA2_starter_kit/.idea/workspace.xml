@@ -19,27 +19,38 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="450">
-      <file leaf-file-name="PriorityScheduler.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/cs131/pa2/CarsTunnels/PriorityScheduler.java">
+      <file leaf-file-name="PreemptivePriorityScheduler.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/cs131/pa2/CarsTunnels/PreemptivePriorityScheduler.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="378">
-              <caret line="65" column="21" lean-forward="true" selection-start-line="65" selection-start-column="21" selection-end-line="65" selection-end-column="21" />
+            <state relative-caret-position="355">
+              <caret line="91" column="13" lean-forward="true" selection-start-line="91" selection-start-column="13" selection-end-line="91" selection-end-column="13" />
               <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="method#PriorityScheduler#1;class#PriorityScheduler#0" expanded="true" />
-                <element signature="e#565#580#0" expanded="true" />
-                <element signature="e#583#598#0" expanded="true" />
-                <element signature="method#tryToEnterInner#0;class#PriorityScheduler#0" expanded="true" />
-                <element signature="e#833#864#0" expanded="true" />
-                <element signature="e#868#889#0" expanded="true" />
-                <element signature="e#1088#1101#0" expanded="true" />
-                <element signature="e#1192#1216#0" expanded="true" />
-                <element signature="e#1192#1216#0" expanded="true" />
-                <element signature="e#1192#1216#0" expanded="true" />
-                <element signature="e#1541#1557#0" expanded="true" />
-                <element signature="e#1541#1557#0" expanded="true" />
-                <element signature="e#1586#1605#0" expanded="true" />
-                <element signature="e#1586#1605#0" expanded="true" />
+                <element signature="method#PreemptivePriorityScheduler#1;class#PreemptivePriorityScheduler#0" expanded="true" />
+                <element signature="method#tryToEnterInner#0;class#PreemptivePriorityScheduler#0" expanded="true" />
+                <element signature="e#770#783#0" expanded="true" />
+                <element signature="e#844#868#0" expanded="true" />
+                <element signature="e#844#868#0" expanded="true" />
+                <element signature="e#844#868#0" expanded="true" />
+                <element signature="e#876#913#1" expanded="true" />
+                <element signature="e#892#912#0" expanded="true" />
+                <element signature="e#920#959#1" expanded="true" />
+                <element signature="e#947#958#0" expanded="true" />
+                <element signature="e#970#979#0" expanded="true" />
+                <element signature="e#1328#1359#0" expanded="true" />
+                <element signature="e#1363#1384#0" expanded="true" />
+                <element signature="e#1593#1606#0" expanded="true" />
+                <element signature="e#2042#2058#0" expanded="true" />
+                <element signature="e#2042#2058#0" expanded="true" />
+                <element signature="e#2087#2106#0" expanded="true" />
+                <element signature="e#2087#2106#0" expanded="true" />
+                <element signature="e#2202#2235#1" expanded="true" />
+                <element signature="e#2218#2234#0" expanded="true" />
+                <element signature="e#2218#2234#0" expanded="true" />
+                <element signature="e#2239#2276#1" expanded="true" />
+                <element signature="e#2255#2275#0" expanded="true" />
+                <element signature="e#2280#2319#1" expanded="true" />
+                <element signature="e#2307#2318#0" expanded="true" />
+                <element signature="e#2327#2336#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -48,27 +59,47 @@
       <file leaf-file-name="BasicTunnel.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/cs131/pa2/CarsTunnels/BasicTunnel.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="604">
-              <caret line="51" column="62" lean-forward="true" selection-start-line="51" selection-start-column="62" selection-end-line="51" selection-end-column="62" />
+            <state relative-caret-position="1961">
+              <caret line="73" column="0" lean-forward="true" selection-start-line="73" selection-start-column="0" selection-end-line="73" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="method#tryToEnterInner#0;class#BasicTunnel#0" expanded="true" />
+                <element signature="e#674#696#0" expanded="true" />
+                <element signature="e#782#804#0" expanded="true" />
                 <element signature="method#exitTunnelInner#0;class#BasicTunnel#0" expanded="true" />
+                <element signature="e#1888#1889#0" expanded="true" />
+                <element signature="e#1911#1912#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Vehicle.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="PrioritySchedulerTest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/cs131/pa2/Test/PrioritySchedulerTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="38">
+              <caret line="125" column="60" lean-forward="true" selection-start-line="125" selection-start-column="60" selection-end-line="125" selection-end-column="60" />
+              <folding>
+                <element signature="e#4556#4580#0" expanded="true" />
+                <element signature="e#4625#4633#1" expanded="true" />
+                <element signature="e#4740#4755#0" expanded="true" />
+                <element signature="e#4740#4755#0" expanded="true" />
+                <element signature="e#5135#5256#1" expanded="true" />
+                <element signature="e#5196#5203#0" expanded="true" />
+                <element signature="e#5196#5203#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Vehicle.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/cs131/pa2/Abstract/Vehicle.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="131">
-              <caret line="168" column="26" lean-forward="false" selection-start-line="168" selection-start-column="26" selection-end-line="168" selection-end-column="26" />
+            <state relative-caret-position="2607">
+              <caret line="166" column="40" lean-forward="false" selection-start-line="166" selection-start-column="40" selection-end-line="166" selection-end-column="40" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#5477#5511#0" expanded="true" />
-                <element signature="e#5502#5511#0" expanded="true" />
-                <element signature="e#5477#5511#0" expanded="true" />
+                <element signature="method#doWhileInTunnel#0;class#Vehicle#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -86,9 +117,12 @@
       <list>
         <option value="$PROJECT_DIR$/src/cs131/pa2/CarsTunnels/Ambulance.java" />
         <option value="$PROJECT_DIR$/src/cs131/pa2/Test/TestUtilities.java" />
-        <option value="$PROJECT_DIR$/src/cs131/pa2/CarsTunnels/BasicTunnel.java" />
         <option value="$PROJECT_DIR$/src/cs131/pa2/CarsTunnels/ConcreteFactory.java" />
+        <option value="$PROJECT_DIR$/src/cs131/pa2/Abstract/Vehicle.java" />
         <option value="$PROJECT_DIR$/src/cs131/pa2/CarsTunnels/PriorityScheduler.java" />
+        <option value="$PROJECT_DIR$/src/cs131/pa2/Test/PrioritySchedulerTest.java" />
+        <option value="$PROJECT_DIR$/src/cs131/pa2/CarsTunnels/BasicTunnel.java" />
+        <option value="$PROJECT_DIR$/src/cs131/pa2/CarsTunnels/PreemptivePriorityScheduler.java" />
       </list>
     </option>
   </component>
@@ -627,7 +661,9 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager />
+    <breakpoint-manager>
+      <option name="time" value="1" />
+    </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="antWorkspaceConfiguration">
@@ -674,6 +710,34 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="595">
           <caret line="18" column="8" lean-forward="true" selection-start-line="18" selection-start-column="8" selection-end-line="18" selection-end-column="8" />
+          <folding>
+            <element signature="method#PreemptivePriorityScheduler#1;class#PreemptivePriorityScheduler#0" expanded="true" />
+            <element signature="method#tryToEnterInner#0;class#PreemptivePriorityScheduler#0" expanded="true" />
+            <element signature="e#770#783#0" expanded="true" />
+            <element signature="e#844#868#0" expanded="true" />
+            <element signature="e#844#868#0" expanded="true" />
+            <element signature="e#844#868#0" expanded="true" />
+            <element signature="e#876#913#1" expanded="true" />
+            <element signature="e#892#912#0" expanded="true" />
+            <element signature="e#920#959#1" expanded="true" />
+            <element signature="e#947#958#0" expanded="true" />
+            <element signature="e#970#979#0" expanded="true" />
+            <element signature="e#1328#1359#0" expanded="true" />
+            <element signature="e#1363#1384#0" expanded="true" />
+            <element signature="e#1593#1606#0" expanded="true" />
+            <element signature="e#2042#2058#0" expanded="true" />
+            <element signature="e#2042#2058#0" expanded="true" />
+            <element signature="e#2087#2106#0" expanded="true" />
+            <element signature="e#2087#2106#0" expanded="true" />
+            <element signature="e#2202#2235#1" expanded="true" />
+            <element signature="e#2218#2234#0" expanded="true" />
+            <element signature="e#2218#2234#0" expanded="true" />
+            <element signature="e#2239#2276#1" expanded="true" />
+            <element signature="e#2255#2275#0" expanded="true" />
+            <element signature="e#2280#2319#1" expanded="true" />
+            <element signature="e#2307#2318#0" expanded="true" />
+            <element signature="e#2327#2336#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -683,9 +747,7 @@
           <caret line="170" column="44" lean-forward="false" selection-start-line="170" selection-start-column="33" selection-end-line="170" selection-end-column="44" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#5477#5511#0" expanded="true" />
-            <element signature="e#5502#5511#0" expanded="true" />
-            <element signature="e#5477#5511#0" expanded="true" />
+            <element signature="method#doWhileInTunnel#0;class#Vehicle#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -702,7 +764,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="28">
           <caret line="23" column="25" lean-forward="false" selection-start-line="23" selection-start-column="25" selection-end-line="23" selection-end-column="25" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#tryToEnter#0;class#Tunnel#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -710,7 +775,35 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="56">
           <caret line="2" column="7" lean-forward="true" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
-          <folding />
+          <folding>
+            <element signature="method#setupSimplePriorityScheduler#0;class#PrioritySchedulerTest#0" expanded="false" />
+            <element signature="e#1052#1105#1" expanded="false" />
+            <element signature="e#1081#1104#0" expanded="false" />
+            <element signature="e#1114#1175#0" expanded="false" />
+            <element signature="e#1114#1175#0" expanded="false" />
+            <element signature="method#setupPreemptivePriorityScheduler#0;class#PrioritySchedulerTest#0" expanded="false" />
+            <element signature="e#1397#1420#0" expanded="false" />
+            <element signature="method#Ambulance_Enter#0;class#PrioritySchedulerTest#0" expanded="false" />
+            <element signature="e#2964#3018#1" expanded="false" />
+            <element signature="e#3027#3109#1" expanded="false" />
+            <element signature="e#3141#3228#1" expanded="false" />
+            <element signature="e#4426#4480#1" expanded="false" />
+            <element signature="e#4456#4479#0" expanded="false" />
+            <element signature="e#4469#4477#0" expanded="false" />
+            <element signature="e#4486#4582#1" expanded="false" />
+            <element signature="e#4625#4633#1" expanded="true" />
+            <element signature="e#4620#4953#0" expanded="false" />
+            <element signature="e#4620#4953#0" expanded="false" />
+            <element signature="e#4620#4953#0" expanded="false" />
+            <element signature="e#4649#4736#1" expanded="false" />
+            <element signature="e#4740#4755#0" expanded="true" />
+            <element signature="e#4740#4755#0" expanded="true" />
+            <element signature="e#4825#4863#1" expanded="false" />
+            <element signature="e#4910#4942#0" expanded="false" />
+            <element signature="e#4910#4942#0" expanded="false" />
+            <element signature="e#5196#5203#0" expanded="true" />
+            <element signature="e#5196#5203#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -721,19 +814,12 @@
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#PriorityScheduler#1;class#PriorityScheduler#0" expanded="true" />
-            <element signature="e#565#580#0" expanded="true" />
-            <element signature="e#583#598#0" expanded="true" />
-            <element signature="method#tryToEnterInner#0;class#PriorityScheduler#0" expanded="true" />
             <element signature="e#833#864#0" expanded="true" />
             <element signature="e#868#889#0" expanded="true" />
             <element signature="e#1088#1101#0" expanded="true" />
-            <element signature="e#1192#1216#0" expanded="true" />
-            <element signature="e#1192#1216#0" expanded="true" />
-            <element signature="e#1192#1216#0" expanded="true" />
-            <element signature="e#1541#1557#0" expanded="true" />
-            <element signature="e#1541#1557#0" expanded="true" />
-            <element signature="e#1586#1605#0" expanded="true" />
-            <element signature="e#1586#1605#0" expanded="true" />
+            <element signature="method#exitTunnelInner#0;class#PriorityScheduler#0" expanded="true" />
+            <element signature="e#1580#1599#0" expanded="true" />
+            <element signature="e#1580#1599#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -776,9 +862,7 @@
           <caret line="25" column="35" lean-forward="false" selection-start-line="25" selection-start-column="35" selection-end-line="25" selection-end-column="35" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#5477#5511#0" expanded="true" />
-            <element signature="e#5502#5511#0" expanded="true" />
-            <element signature="e#5477#5511#0" expanded="true" />
+            <element signature="method#doWhileInTunnel#0;class#Vehicle#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -813,7 +897,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="770">
           <caret line="25" column="24" lean-forward="false" selection-start-line="25" selection-start-column="24" selection-end-line="25" selection-end-column="24" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#tryToEnter#0;class#Tunnel#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -877,6 +964,34 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="140">
           <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+          <folding>
+            <element signature="method#PreemptivePriorityScheduler#1;class#PreemptivePriorityScheduler#0" expanded="true" />
+            <element signature="method#tryToEnterInner#0;class#PreemptivePriorityScheduler#0" expanded="true" />
+            <element signature="e#770#783#0" expanded="true" />
+            <element signature="e#844#868#0" expanded="true" />
+            <element signature="e#844#868#0" expanded="true" />
+            <element signature="e#844#868#0" expanded="true" />
+            <element signature="e#876#913#1" expanded="true" />
+            <element signature="e#892#912#0" expanded="true" />
+            <element signature="e#920#959#1" expanded="true" />
+            <element signature="e#947#958#0" expanded="true" />
+            <element signature="e#970#979#0" expanded="true" />
+            <element signature="e#1328#1359#0" expanded="true" />
+            <element signature="e#1363#1384#0" expanded="true" />
+            <element signature="e#1593#1606#0" expanded="true" />
+            <element signature="e#2042#2058#0" expanded="true" />
+            <element signature="e#2042#2058#0" expanded="true" />
+            <element signature="e#2087#2106#0" expanded="true" />
+            <element signature="e#2087#2106#0" expanded="true" />
+            <element signature="e#2202#2235#1" expanded="true" />
+            <element signature="e#2218#2234#0" expanded="true" />
+            <element signature="e#2218#2234#0" expanded="true" />
+            <element signature="e#2239#2276#1" expanded="true" />
+            <element signature="e#2255#2275#0" expanded="true" />
+            <element signature="e#2280#2319#1" expanded="true" />
+            <element signature="e#2307#2318#0" expanded="true" />
+            <element signature="e#2327#2336#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -884,7 +999,35 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="140">
           <caret line="22" column="13" lean-forward="false" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
-          <folding />
+          <folding>
+            <element signature="method#setupSimplePriorityScheduler#0;class#PrioritySchedulerTest#0" expanded="false" />
+            <element signature="e#1052#1105#1" expanded="false" />
+            <element signature="e#1081#1104#0" expanded="false" />
+            <element signature="e#1114#1175#0" expanded="false" />
+            <element signature="e#1114#1175#0" expanded="false" />
+            <element signature="method#setupPreemptivePriorityScheduler#0;class#PrioritySchedulerTest#0" expanded="false" />
+            <element signature="e#1397#1420#0" expanded="false" />
+            <element signature="method#Ambulance_Enter#0;class#PrioritySchedulerTest#0" expanded="false" />
+            <element signature="e#2964#3018#1" expanded="false" />
+            <element signature="e#3027#3109#1" expanded="false" />
+            <element signature="e#3141#3228#1" expanded="false" />
+            <element signature="e#4426#4480#1" expanded="false" />
+            <element signature="e#4456#4479#0" expanded="false" />
+            <element signature="e#4469#4477#0" expanded="false" />
+            <element signature="e#4486#4582#1" expanded="false" />
+            <element signature="e#4625#4633#1" expanded="true" />
+            <element signature="e#4620#4953#0" expanded="false" />
+            <element signature="e#4620#4953#0" expanded="false" />
+            <element signature="e#4620#4953#0" expanded="false" />
+            <element signature="e#4649#4736#1" expanded="false" />
+            <element signature="e#4740#4755#0" expanded="true" />
+            <element signature="e#4740#4755#0" expanded="true" />
+            <element signature="e#4825#4863#1" expanded="false" />
+            <element signature="e#4910#4942#0" expanded="false" />
+            <element signature="e#4910#4942#0" expanded="false" />
+            <element signature="e#5196#5203#0" expanded="true" />
+            <element signature="e#5196#5203#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -952,14 +1095,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/cs131/pa2/CarsTunnels/Ambulance.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="245">
-          <caret line="8" column="22" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/cs131/pa2/Test/BehaviorTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1540">
@@ -985,98 +1120,145 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/cs131/pa2/Abstract/Tunnel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-350">
-          <caret line="23" column="25" lean-forward="true" selection-start-line="23" selection-start-column="25" selection-end-line="23" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/cs131/pa2/Test/TestUtilities.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="560">
+        <state relative-caret-position="448">
           <caret line="21" column="42" lean-forward="false" selection-start-line="21" selection-start-column="42" selection-end-line="21" selection-end-column="42" />
-          <folding />
+          <folding>
+            <element signature="e#1032#1078#1" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/cs131/pa2/CarsTunnels/Car.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="630">
-          <caret line="19" column="26" lean-forward="false" selection-start-line="19" selection-start-column="18" selection-end-line="19" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/cs131/pa2/CarsTunnels/PreemptivePriorityScheduler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="595">
-          <caret line="18" column="8" lean-forward="true" selection-start-line="18" selection-start-column="8" selection-end-line="18" selection-end-column="8" />
+        <state relative-caret-position="420">
+          <caret line="20" column="36" lean-forward="false" selection-start-line="20" selection-start-column="36" selection-end-line="20" selection-end-column="36" />
+          <folding>
+            <element signature="e#377#378#0" expanded="false" />
+            <element signature="e#465#466#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/cs131/pa2/CarsTunnels/ConcreteFactory.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="665">
-          <caret line="31" column="54" lean-forward="false" selection-start-line="31" selection-start-column="54" selection-end-line="31" selection-end-column="54" />
+        <state relative-caret-position="221">
+          <caret line="14" column="30" lean-forward="false" selection-start-line="14" selection-start-column="19" selection-end-line="14" selection-end-column="30" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/cs131/pa2/Test/PrioritySchedulerTest.java">
+    <entry file="file://$PROJECT_DIR$/src/cs131/pa2/CarsTunnels/Ambulance.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="683">
-          <caret line="136" column="18" lean-forward="false" selection-start-line="136" selection-start-column="12" selection-end-line="136" selection-end-column="18" />
+        <state relative-caret-position="339">
+          <caret line="21" column="22" lean-forward="false" selection-start-line="21" selection-start-column="22" selection-end-line="21" selection-end-column="22" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/cs131/pa2/CarsTunnels/BasicTunnel.java">
+    <entry file="file://$PROJECT_DIR$/src/cs131/pa2/Abstract/Tunnel.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="604">
-          <caret line="51" column="62" lean-forward="true" selection-start-line="51" selection-start-column="62" selection-end-line="51" selection-end-column="62" />
+        <state relative-caret-position="174">
+          <caret line="55" column="36" lean-forward="false" selection-start-line="55" selection-start-column="36" selection-end-line="55" selection-end-column="36" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#tryToEnterInner#0;class#BasicTunnel#0" expanded="true" />
-            <element signature="method#exitTunnelInner#0;class#BasicTunnel#0" expanded="true" />
+            <element signature="method#tryToEnter#0;class#Tunnel#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/cs131/pa2/CarsTunnels/PriorityScheduler.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="65" column="21" lean-forward="true" selection-start-line="65" selection-start-column="21" selection-end-line="65" selection-end-column="21" />
+        <state relative-caret-position="138">
+          <caret line="40" column="35" lean-forward="true" selection-start-line="40" selection-start-column="35" selection-end-line="40" selection-end-column="35" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#PriorityScheduler#1;class#PriorityScheduler#0" expanded="true" />
-            <element signature="e#565#580#0" expanded="true" />
-            <element signature="e#583#598#0" expanded="true" />
-            <element signature="method#tryToEnterInner#0;class#PriorityScheduler#0" expanded="true" />
             <element signature="e#833#864#0" expanded="true" />
             <element signature="e#868#889#0" expanded="true" />
             <element signature="e#1088#1101#0" expanded="true" />
-            <element signature="e#1192#1216#0" expanded="true" />
-            <element signature="e#1192#1216#0" expanded="true" />
-            <element signature="e#1192#1216#0" expanded="true" />
-            <element signature="e#1541#1557#0" expanded="true" />
-            <element signature="e#1541#1557#0" expanded="true" />
-            <element signature="e#1586#1605#0" expanded="true" />
-            <element signature="e#1586#1605#0" expanded="true" />
+            <element signature="method#exitTunnelInner#0;class#PriorityScheduler#0" expanded="true" />
+            <element signature="e#1580#1599#0" expanded="true" />
+            <element signature="e#1580#1599#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/cs131/pa2/Abstract/Vehicle.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="131">
-          <caret line="168" column="26" lean-forward="false" selection-start-line="168" selection-start-column="26" selection-end-line="168" selection-end-column="26" />
+        <state relative-caret-position="2607">
+          <caret line="166" column="40" lean-forward="false" selection-start-line="166" selection-start-column="40" selection-end-line="166" selection-end-column="40" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#5477#5511#0" expanded="true" />
-            <element signature="e#5502#5511#0" expanded="true" />
-            <element signature="e#5477#5511#0" expanded="true" />
+            <element signature="method#doWhileInTunnel#0;class#Vehicle#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cs131/pa2/CarsTunnels/BasicTunnel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1961">
+          <caret line="73" column="0" lean-forward="true" selection-start-line="73" selection-start-column="0" selection-end-line="73" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#tryToEnterInner#0;class#BasicTunnel#0" expanded="true" />
+            <element signature="e#674#696#0" expanded="true" />
+            <element signature="e#782#804#0" expanded="true" />
+            <element signature="method#exitTunnelInner#0;class#BasicTunnel#0" expanded="true" />
+            <element signature="e#1888#1889#0" expanded="true" />
+            <element signature="e#1911#1912#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cs131/pa2/Test/PrioritySchedulerTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="125" column="60" lean-forward="true" selection-start-line="125" selection-start-column="60" selection-end-line="125" selection-end-column="60" />
+          <folding>
+            <element signature="e#4556#4580#0" expanded="true" />
+            <element signature="e#4625#4633#1" expanded="true" />
+            <element signature="e#4740#4755#0" expanded="true" />
+            <element signature="e#4740#4755#0" expanded="true" />
+            <element signature="e#5135#5256#1" expanded="true" />
+            <element signature="e#5196#5203#0" expanded="true" />
+            <element signature="e#5196#5203#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cs131/pa2/CarsTunnels/PreemptivePriorityScheduler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="355">
+          <caret line="91" column="13" lean-forward="true" selection-start-line="91" selection-start-column="13" selection-end-line="91" selection-end-column="13" />
+          <folding>
+            <element signature="method#PreemptivePriorityScheduler#1;class#PreemptivePriorityScheduler#0" expanded="true" />
+            <element signature="method#tryToEnterInner#0;class#PreemptivePriorityScheduler#0" expanded="true" />
+            <element signature="e#770#783#0" expanded="true" />
+            <element signature="e#844#868#0" expanded="true" />
+            <element signature="e#844#868#0" expanded="true" />
+            <element signature="e#844#868#0" expanded="true" />
+            <element signature="e#876#913#1" expanded="true" />
+            <element signature="e#892#912#0" expanded="true" />
+            <element signature="e#920#959#1" expanded="true" />
+            <element signature="e#947#958#0" expanded="true" />
+            <element signature="e#970#979#0" expanded="true" />
+            <element signature="e#1328#1359#0" expanded="true" />
+            <element signature="e#1363#1384#0" expanded="true" />
+            <element signature="e#1593#1606#0" expanded="true" />
+            <element signature="e#2042#2058#0" expanded="true" />
+            <element signature="e#2042#2058#0" expanded="true" />
+            <element signature="e#2087#2106#0" expanded="true" />
+            <element signature="e#2087#2106#0" expanded="true" />
+            <element signature="e#2202#2235#1" expanded="true" />
+            <element signature="e#2218#2234#0" expanded="true" />
+            <element signature="e#2218#2234#0" expanded="true" />
+            <element signature="e#2239#2276#1" expanded="true" />
+            <element signature="e#2255#2275#0" expanded="true" />
+            <element signature="e#2280#2319#1" expanded="true" />
+            <element signature="e#2307#2318#0" expanded="true" />
+            <element signature="e#2327#2336#0" expanded="true" />
           </folding>
         </state>
       </provider>

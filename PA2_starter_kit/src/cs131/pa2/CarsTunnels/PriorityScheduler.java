@@ -54,8 +54,6 @@ public class PriorityScheduler extends Tunnel{
 				wait();
 			}catch (InterruptedException e){}
 		}
-		
-		
 	}
 
 	@Override

@@ -20,7 +20,7 @@ import cs131.pa2.Abstract.Log.Log;
  * instance method is called from the private init method, and the
  * integer that it returns is used as the speed for the vehicle.
  */
-public abstract class Vehicle implements Runnable {
+public abstract class Vehicle implements Runnable{
     private String            	name;
     private Direction          	direction;
     private Collection<Tunnel> 	tunnels;
