@@ -14,13 +14,16 @@ public class Log {
     public Log() {
     }
 
-    public void addToLog(Vehicle client, Tunnel server, EventType type, int sig) {
+    public Event addToLog(Vehicle client, Tunnel server, EventType type, int sig) {
+        Event event = null;
         try {
-            log.put(new Event(client, server, type, sig));
+             event = new Event(client, server, type, sig);
+            log.put(event);
         } catch (InterruptedException ex) {
             add_error_msg();
             ex.printStackTrace();
         }
+        return event;
     }
     
     public void addToLog(Vehicle client, Tunnel server, EventType type) {

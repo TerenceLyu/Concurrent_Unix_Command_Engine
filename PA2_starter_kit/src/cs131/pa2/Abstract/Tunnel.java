@@ -2,6 +2,7 @@ package cs131.pa2.Abstract;
 
 import java.util.Objects;
 
+import cs131.pa2.Abstract.Log.Event;
 import cs131.pa2.Abstract.Log.EventType;
 import cs131.pa2.Abstract.Log.Log;
 
@@ -38,7 +39,9 @@ public abstract class Tunnel {
         //Do not overwrite this function, you should be overwriting tryToEnterInner
         int sig = log.nextLogEventNumber();
         log.addToLog(vehicle, this, EventType.ENTER_ATTEMPT, sig);
+//        System.out.println("try to enter :" + vehicle.getName() + ", P"+ vehicle.getPriority());
         if (this.tryToEnterInner(vehicle)) {
+//            System.out.println("enter success :" + vehicle.getName());
             log.addToLog(vehicle, this, EventType.ENTER_SUCCESS, sig);
             return true;
         } else {
@@ -61,6 +64,7 @@ public abstract class Tunnel {
         this.log.addToLog(vehicle, this, EventType.LEAVE_START, sig);
         this.exitTunnelInner(vehicle);
         this.log.addToLog(vehicle, this, EventType.LEAVE_END, sig);
+//        System.out.println("leave :" + vehicle.getName());
     }
     
     /**

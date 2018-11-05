@@ -101,6 +101,7 @@ public class PrioritySchedulerTest {
 		}
 		Tunnel.DEFAULT_LOG.addToLog(EventType.END_TEST);
 		Log log = Tunnel.DEFAULT_LOG;
+	    System.out.println(log);
 		Event currentEvent;
 		int i=0;
 		Vehicle lastEnteredVehicle = null;
@@ -117,6 +118,7 @@ public class PrioritySchedulerTest {
 					}
 				}
 			}
+			System.out.println(currentEvent);
 		} while (!currentEvent.getEvent().equals(EventType.END_TEST));    		
     }
     
@@ -156,7 +158,7 @@ public class PrioritySchedulerTest {
         }
     	// make sure that nobody exits the tunnel until ambulances exit
         Tunnel.DEFAULT_LOG.addToLog(EventType.END_TEST);
-		Log log = Tunnel.DEFAULT_LOG;
+		Log log = preemptivePriorityScheduler.DEFAULT_LOG;
 		Event currentEvent;
 		Vehicle ambulance=null;
 		Vehicle [] cars = new Vehicle[3];
@@ -170,18 +172,18 @@ public class PrioritySchedulerTest {
 			}
 			if (currentEvent.getEvent() == EventType.ENTER_SUCCESS && currentEvent.getVehicle() instanceof Car) {
 				switch(currentEvent.getVehicle().getName()){
-				case "0":
-					cars[0] = currentEvent.getVehicle();
-					break;
-				case "1":
-					cars[1] = currentEvent.getVehicle();
-					break;
-				case "2":
-					cars[2] = currentEvent.getVehicle();
-					break;
-				default:
-					assertTrue("Wrong vehicle entered tunnel!", false);
-					break;
+					case "0":
+						cars[0] = currentEvent.getVehicle();
+						break;
+					case "1":
+						cars[1] = currentEvent.getVehicle();
+						break;
+					case "2":
+						cars[2] = currentEvent.getVehicle();
+						break;
+					default:
+						assertTrue("Wrong vehicle entered tunnel!", false);
+						break;
 				}
 			}
 			if(currentEvent.getEvent() == EventType.LEAVE_START) {
@@ -193,7 +195,7 @@ public class PrioritySchedulerTest {
 			}
 			System.out.println(currentEvent.toString());
 		} while (!currentEvent.getEvent().equals(EventType.END_TEST));
-		if(ambulance == null | cars[0] == null || cars[1] == null || cars[2] == null) {
+		if(ambulance == null || cars[0] == null || cars[1] == null || cars[2] == null) {
 			assertTrue("Vehicles did not enter tunnel successfully!", false);
 		}
     }

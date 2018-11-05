@@ -5,6 +5,9 @@ import cs131.pa2.Abstract.Tunnel;
 import cs131.pa2.Abstract.Vehicle;
 
 import java.util.*;
+import java.util.concurrent.locks.Condition;
+import java.util.concurrent.locks.Lock;
+import java.util.concurrent.locks.ReentrantLock;
 
 public class PreemptivePriorityScheduler extends Tunnel{
 	private Collection<Tunnel> tunnels;
@@ -15,13 +18,13 @@ public class PreemptivePriorityScheduler extends Tunnel{
 		super(name);
 	}
 	public PreemptivePriorityScheduler(String name, Collection<Tunnel> tunnels, Log log){
-		super(name, log);
+		super(name);
 		this.tunnels = tunnels;
 		this.queue = new PriorityQueue<>(20, (a, b) -> b.getPriority() - a.getPriority());
 	}
 
 	@Override
-	public boolean tryToEnterInner(Vehicle vehicle){
+	public synchronized boolean tryToEnterInner(Vehicle vehicle){
 		while (true){
 			if(vehicle.toString().contains("AMBULANCE")){
 				for(Tunnel tunnel: tunnels){
@@ -30,7 +33,9 @@ public class PreemptivePriorityScheduler extends Tunnel{
 						BasicTunnel t = (BasicTunnel) tunnel;
 						LinkedList<Vehicle> lane = t.getLane();
 						for(Vehicle v: lane){
-							v.wait();
+							if (!v.equals(vehicle)) {
+								v.signal();
+							}
 						}
 						return true;
 					}
@@ -42,47 +47,33 @@ public class PreemptivePriorityScheduler extends Tunnel{
 					} catch (InterruptedException e){}
 				}
 			}else{
-				//if the priority of the vehicle is not the largest
-				//add it to the queue and let it wait
-				if (this.queue.size() != 0){
-					if (this.queue.peek().getPriority() >= vehicle.getPriority()){
-						if (!queue.contains(vehicle)){
-							queue.add(vehicle);
-						}
-						try{
-							wait();
-						} catch (InterruptedException e){}
-					}
+				//if the priority of the vehicle is not the head of the queue, wait.
+				while (vehicle!=queue.peek()){
+					try {
+						wait();
+					}catch (InterruptedException e){}
 				}
-
-				//add the vehicle to one of the tunnels
-				for (Tunnel tunnel : tunnels){
+				for (Tunnel tunnel: tunnels)
+				{
 					if (tunnel.tryToEnterInner(vehicle)){
 						queue.remove(vehicle);
 						map.put(vehicle, tunnel);
 						return true;
 					}
 				}
-
-				//if the queue is empty but no tunnel to enter
-				//add the vehicle to the queue
 				if (!queue.contains(vehicle)){
 					queue.add(vehicle);
 				}
-				try{
+				try {
 					wait();
-				} catch (InterruptedException e){}
+				}catch (InterruptedException e){}
 			}
 		}
 	}
 
 	@Override
-	public void exitTunnelInner(Vehicle vehicle){
+	public synchronized void exitTunnelInner(Vehicle vehicle){
 		map.get(vehicle).exitTunnelInner(vehicle);
-		map.remove(vehicle);
-		if (queue.size() != 0){
-			notify();
-		}
 		if(vehicle.toString().contains("AMBULANCE")){
 			Tunnel tunnel = map.get(vehicle);
 			BasicTunnel t = (BasicTunnel) tunnel;
@@ -91,6 +82,11 @@ public class PreemptivePriorityScheduler extends Tunnel{
 				v.signal();
 			}
 		}
+		map.remove(vehicle);
+		if (queue.size() != 0){
+			notifyAll();
+		}
+		
 	}
 }
 

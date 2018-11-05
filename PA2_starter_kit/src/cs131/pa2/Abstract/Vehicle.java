@@ -1,9 +1,13 @@
 package cs131.pa2.Abstract;
+
 import java.util.*;
+import java.util.concurrent.TimeUnit;
+import java.util.concurrent.locks.Condition;
+import java.util.concurrent.locks.Lock;
+import java.util.concurrent.locks.ReentrantLock;
 
 import cs131.pa2.Abstract.Log.EventType;
 import cs131.pa2.Abstract.Log.Log;
-
 /**
  * A Vehicle is a Runnable which enters tunnels. You must subclass
  * Vehicle to customize its behavior (e.g., Car and Sled).
@@ -27,7 +31,8 @@ public abstract class Vehicle implements Runnable{
     private int                	priority;
     private int                	speed;
     private Log 				log;
-
+	private Lock                lock = new ReentrantLock();
+	public Condition           condi = lock.newCondition();
     /**
      * Initialize a Vehicle; called from Vehicle constructors.
      */
@@ -140,9 +145,11 @@ public abstract class Vehicle implements Runnable{
         //
         while(true) {
             for(Tunnel tunnel : tunnels) {
-                if(tunnel.tryToEnter(this)) {
+	            
+	            if(tunnel.tryToEnter(this)) {
                     doWhileInTunnel();
-                    tunnel.exitTunnel(this);
+//	                System.out.println("try to leave");
+	                tunnel.exitTunnel(this);
                     this.log.addToLog(this, EventType.COMPLETE);
                     return; // done, so leave the whole function
                 }
@@ -165,13 +172,41 @@ public abstract class Vehicle implements Runnable{
      * vehicle is, the less time this will take.
      */
     public final void doWhileInTunnel() {
-         try {
-             Thread.sleep((10 - speed) * 100);
-         } catch(InterruptedException e) {
-             System.err.println("Interrupted vehicle " + getName());
-         }
+    	long waitTime = (10 - speed) * 100;
+	    this.lock.lock();
+	    try {
+		    do
+		    {
+		    	Date date = new Date();
+			    long time = date.getTime();
+//			    System.out.println("start driving, need to wait :"+waitTime+", now :"+time);
+			    try {
+				    condi.await(waitTime, TimeUnit.MILLISECONDS);
+				    waitTime = waitTime - (new Date().getTime()-time);
+			    } catch(InterruptedException e) {
+				    System.err.println("Interrupted vehicle " + getName());
+			    }
+//			    System.out.println("pull over for ambulance, still need to wait :"+waitTime+", now :"+new Date().getTime());
+			    if (waitTime > 0){
+				    try {
+					    condi.await();
+				    }catch (InterruptedException e) {}
+			    }else {
+			    	waitTime = 0;
+			    }
+		    }while (waitTime > 0);
+	    }finally {
+		    this.lock.unlock();
+	    }
     }
-    
+    public final void signal() {
+    	this.lock.lock();
+    	try {
+	    	this.condi.signal();
+	    }finally {
+	    	this.lock.unlock();
+	    }
+	}
     @Override
     public int hashCode() {
         int hash = 7;

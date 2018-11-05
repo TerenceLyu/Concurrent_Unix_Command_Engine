@@ -20,12 +20,20 @@ public class BasicTunnel extends Tunnel{
 	@Override
 	public synchronized boolean tryToEnterInner(Vehicle vehicle) {
 		//no vehicle in the tunnel, set direction to vehicle direction
-		if (this.tunnelDirection == null){
+		if (this.tunnelDirection == null) {
 			this.tunnelDirection = vehicle.getDirection();
 		}
+		if (vehicle.toString().contains("AMBULANCE")) {
+			//add ambulance when there is no ambulance in the tunnel
+			if (this.ambulanceCount == 0) {
+				this.lane.add(vehicle);
+				this.ambulanceCount++;
+				return true;
+			}
+			return false;
+		}
 		//only allows vehicle with same direction enter
-		if (this.tunnelDirection == vehicle.getDirection()){
-
+		if (this.tunnelDirection == vehicle.getDirection()) {
 			if (vehicle.toString().contains("CAR")) {
 				//check for car and sled
 				if (this.sledCount == 0 && this.carCount < 3) {
@@ -34,7 +42,7 @@ public class BasicTunnel extends Tunnel{
 					this.carCount++;
 					return true;
 				}
-			}else if (vehicle.toString().contains("SLED")) {
+			} else {
 				//check for car and sled
 				if (this.carCount == 0 && this.sledCount == 0) {
 					//if no car and no sled
@@ -43,17 +51,9 @@ public class BasicTunnel extends Tunnel{
 					return true;
 				}
 			}
-	}else if (vehicle.toString().contains("AMBULANCE")){
-			//add ambulance when there is no ambulance in the tunnel
-			if (this.ambulanceCount == 0){
-				this.lane.add(vehicle);
-				this.ambulanceCount++;
-				return true;
-			}
 		}
 		return false;
 	}
-	
 	@Override
 	public synchronized void exitTunnelInner(Vehicle vehicle) {
 		this.lane.remove(vehicle);

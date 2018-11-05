@@ -42,6 +42,7 @@ public class ConcreteFactory implements Factory {
 
 	@Override
 	public Tunnel createNewPreemptivePriorityScheduler(String label, Collection<Tunnel> tunnels, Log log) {
-		throw new UnsupportedOperationException("Not supported yet.");
+		return new PreemptivePriorityScheduler(label, tunnels, log);
+//    	throw new UnsupportedOperationException("Not supported yet.");
 	}
 }
