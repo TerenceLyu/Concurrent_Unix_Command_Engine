@@ -40,7 +40,6 @@ public class SimulationTest {
 
     @Test
     public void Basic_Tunnel_Test() {
-        System.out.println(Tunnel.DEFAULT_LOG);
         LogVerifier verifier = new LogVerifier(Tunnel.DEFAULT_LOG);
         Thread verifierThread = new Thread(verifier);
         verifierThread.start();
