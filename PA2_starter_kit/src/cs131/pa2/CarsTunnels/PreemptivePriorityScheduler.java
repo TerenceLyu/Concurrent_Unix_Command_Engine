@@ -13,6 +13,8 @@ public class PreemptivePriorityScheduler extends Tunnel{
 	private Collection<Tunnel> tunnels;
 	private Map<Vehicle, Tunnel> map = new HashMap<>();
 	private PriorityQueue<Vehicle> queue;
+	private Lock lock = new ReentrantLock();
+	private Condition condition = lock.newCondition();
 	
 	public PreemptivePriorityScheduler(String name)
 	{
@@ -26,110 +28,75 @@ public class PreemptivePriorityScheduler extends Tunnel{
 	}
 
 	@Override
-	public synchronized boolean tryToEnterInner(Vehicle vehicle){
-		if (!queue.contains(vehicle)){
-			queue.add(vehicle);
-		}
-		while (true){
-			if(vehicle.toString().contains("AMBULANCE")){
-				for(Tunnel tunnel: tunnels){
-					if (tunnel.tryToEnter(vehicle)){
-						queue.remove(vehicle);
-						map.put(vehicle, tunnel);
-						BasicTunnel t = (BasicTunnel) tunnel;
-						LinkedList<Vehicle> lane = t.getLane();
-						for(Vehicle v: lane){
-							if (!v.equals(vehicle)) {
-								v.signal();
+	public boolean tryToEnterInner(Vehicle vehicle){
+		lock.lock();
+		try {
+			if (!queue.contains(vehicle)){
+				queue.add(vehicle);
+			}
+			while (true){
+				if(vehicle.toString().contains("AMBULANCE")){
+					for(Tunnel tunnel: tunnels){
+						if (tunnel.tryToEnter(vehicle)){
+							queue.remove(vehicle);
+							map.put(vehicle, tunnel);
+							BasicTunnel t = (BasicTunnel) tunnel;
+							LinkedList<Vehicle> lane = t.getLane();
+							for(Vehicle v: lane){
+								if (!v.equals(vehicle)) {
+									v.signal();
+								}
 							}
+							return true;
 						}
-						return true;
+						try{
+							condition.await();
+						} catch (InterruptedException e){}
 					}
-					try{
-						wait();
-					} catch (InterruptedException e){}
-				}
-			}else {
-				//if the priority of the vehicle is not the head of the queue, wait.
-				while (vehicle != queue.peek()) {
+				}else {
+					//if the priority of the vehicle is not the head of the queue, wait.
+					while (vehicle != queue.peek()) {
+						try {
+							condition.await();
+						} catch (InterruptedException e) {}
+					}
+					for (Tunnel tunnel : tunnels) {
+						if (tunnel.tryToEnter(vehicle)) {
+							queue.remove(vehicle);
+							map.put(vehicle, tunnel);
+							return true;
+						}
+					}
 					try {
-						wait();
+						condition.await();
 					} catch (InterruptedException e) {}
 				}
-				for (Tunnel tunnel : tunnels) {
-					if (tunnel.tryToEnter(vehicle)) {
-						queue.remove(vehicle);
-						map.put(vehicle, tunnel);
-						return true;
-					}
-				}
-				try {
-					wait();
-				} catch (InterruptedException e) {}
 			}
+		}finally {
+			lock.unlock();
 		}
-//		while (true){
-//			if(vehicle.toString().contains("AMBULANCE")){
-//				for(Tunnel tunnel: tunnels){
-//					if (tunnel.tryToEnterInner(vehicle)){
-//						map.put(vehicle, tunnel);
-//						BasicTunnel t = (BasicTunnel) tunnel;
-//						LinkedList<Vehicle> lane = t.getLane();
-//						for(Vehicle v: lane){
-//							if (!v.equals(vehicle)) {
-//								v.signal();
-//							}
-//						}
-//						return true;
-//					}
-//					if (!queue.contains(vehicle)){
-//						queue.add(vehicle);
-//					}
-//					try{
-//						wait();
-//					} catch (InterruptedException e){}
-//				}
-//			}else{
-//				//if the priority of the vehicle is not the head of the queue, wait.
-//				while (vehicle!=queue.peek()){
-//					try {
-//						wait();
-//					}catch (InterruptedException e){}
-//				}
-//				for (Tunnel tunnel: tunnels)
-//				{
-//					if (tunnel.tryToEnterInner(vehicle)){
-//						queue.remove(vehicle);
-//						map.put(vehicle, tunnel);
-//						return true;
-//					}
-//				}
-//				if (!queue.contains(vehicle)){
-//					queue.add(vehicle);
-//				}
-//				try {
-//					wait();
-//				}catch (InterruptedException e){}
-//			}
-//		}
 	}
 
 	@Override
-	public synchronized void exitTunnelInner(Vehicle vehicle){
-		map.get(vehicle).exitTunnelInner(vehicle);
-		if(vehicle.toString().contains("AMBULANCE")){
-			Tunnel tunnel = map.get(vehicle);
-			BasicTunnel t = (BasicTunnel) tunnel;
-			LinkedList<Vehicle> lane = t.getLane();
-			for(Vehicle v: lane){
-				v.signal();
+	public void exitTunnelInner(Vehicle vehicle){
+		lock.lock();
+		try {
+			map.get(vehicle).exitTunnelInner(vehicle);
+			if(vehicle.toString().contains("AMBULANCE")){
+				Tunnel tunnel = map.get(vehicle);
+				BasicTunnel t = (BasicTunnel) tunnel;
+				LinkedList<Vehicle> lane = t.getLane();
+				for(Vehicle v: lane){
+					v.signal();
+				}
 			}
+			map.remove(vehicle);
+			if (queue.size() != 0){
+				condition.signalAll();
+			}
+		}finally {
+			lock.unlock();
 		}
-		map.remove(vehicle);
-		if (queue.size() != 0){
-			notifyAll();
-		}
-		
 	}
 }
 

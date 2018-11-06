@@ -5,11 +5,17 @@ import cs131.pa2.Abstract.Tunnel;
 import cs131.pa2.Abstract.Vehicle;
 
 import java.util.*;
+import java.util.concurrent.locks.Condition;
+import java.util.concurrent.locks.Lock;
+import java.util.concurrent.locks.ReentrantLock;
 
 public class PriorityScheduler extends Tunnel{
 	private Collection<Tunnel> tunnels;
 	private Map<Vehicle, Tunnel> map = new HashMap<>();
 	private PriorityQueue<Vehicle> queue;
+	private Lock lock = new ReentrantLock();
+	private Condition condition = lock.newCondition();
+	
 	public PriorityScheduler(String name) {
 		super(name);
 	}
@@ -20,41 +26,49 @@ public class PriorityScheduler extends Tunnel{
 	}
 	
 	@Override
-	public synchronized boolean tryToEnterInner(Vehicle vehicle) {
-		if (!queue.contains(vehicle)){
-				queue.add(vehicle);
-		}
-		while (true){
-			//if the priority of the vehicle is not the head of the queue, wait.
-			while (vehicle!=queue.peek()){
-				try {
-					wait();
-				}catch (InterruptedException e){}
-			}
-			for (Tunnel tunnel: tunnels)
-			{
-				if (tunnel.tryToEnter(vehicle)){
-					queue.remove(vehicle);
-					map.put(vehicle, tunnel);
-					return true;
-				}
-			}
+	public boolean tryToEnterInner(Vehicle vehicle) {
+		lock.lock();
+		try {
 			if (!queue.contains(vehicle)){
-				queue.add(vehicle);
+					queue.add(vehicle);
 			}
-			try {
-				wait();
-			}catch (InterruptedException e){}
+			while (true){
+				
+				//if the priority of the vehicle is not the head of the queue, wait.
+				while (vehicle!=queue.peek()){
+					try {
+						condition.await();
+					}catch (InterruptedException e){}
+				}
+				for (Tunnel tunnel: tunnels)
+				{
+					if (tunnel.tryToEnter(vehicle)){
+						queue.remove(vehicle);
+						map.put(vehicle, tunnel);
+						return true;
+					}
+				}
+				try {
+					condition.await();
+				}catch (InterruptedException e){}
+				
+			}
+		} finally {
+			lock.unlock();
 		}
-		
 	}
 
 	@Override
-	public synchronized void exitTunnelInner(Vehicle vehicle) {
-		map.get(vehicle).exitTunnel(vehicle);
-		map.remove(vehicle);
-		if (queue.size()!=0){
-			notifyAll();
+	public void exitTunnelInner(Vehicle vehicle) {
+		lock.lock();
+		try {
+			map.get(vehicle).exitTunnel(vehicle);
+			map.remove(vehicle);
+			if (queue.size()!=0){
+				condition.signalAll();
+			}
+		} finally {
+			lock.unlock();
 		}
 	}
 }
