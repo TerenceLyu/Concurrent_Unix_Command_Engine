@@ -187,7 +187,6 @@ public abstract class Vehicle implements Runnable{
 //			    System.out.println("pull over for ambulance, still need to wait :"+waitTime+", now :"+new Date().getTime());
 			    if (waitTime > 0){
 				    try {
-					    System.out.println("pull over for ambo: " + this.getName());
 					    condi.await();
 				    }catch (InterruptedException e) {}
 			    }else {
