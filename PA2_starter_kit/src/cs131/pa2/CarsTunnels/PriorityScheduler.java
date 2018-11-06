@@ -21,6 +21,7 @@ public class PriorityScheduler extends Tunnel{
 	
 	@Override
 	public synchronized boolean tryToEnterInner(Vehicle vehicle) {
+		System.out.println("try to enter: " + vehicle.getName());
 		if (!queue.contains(vehicle)){
 				queue.add(vehicle);
 		}
@@ -36,6 +37,7 @@ public class PriorityScheduler extends Tunnel{
 				if (tunnel.tryToEnterInner(vehicle)){
 					queue.remove(vehicle);
 					map.put(vehicle, tunnel);
+					System.out.println("successful enter: " + vehicle.getName());
 					return true;
 				}
 			}
@@ -46,6 +48,7 @@ public class PriorityScheduler extends Tunnel{
 				wait();
 			}catch (InterruptedException e){}
 		}
+		
 	}
 
 	@Override

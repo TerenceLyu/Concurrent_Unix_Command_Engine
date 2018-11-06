@@ -340,6 +340,7 @@ public class PrioritySchedulerTest {
 			if (currentEvent.getEvent() == EventType.ENTER_SUCCESS && currentEvent.getVehicle() instanceof Ambulance) {
 				ambulance = currentEvent.getVehicle();
 				ambulanceTunnel = currentEvent.getTunnel();
+				System.out.println(ambulanceTunnel.getName());
 			}
 			if (currentEvent.getEvent() == EventType.ENTER_SUCCESS && currentEvent.getVehicle() instanceof Car) {
 				switch(currentEvent.getVehicle().getName()){

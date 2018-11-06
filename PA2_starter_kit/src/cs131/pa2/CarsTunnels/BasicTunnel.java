@@ -7,7 +7,7 @@ import cs131.pa2.Abstract.Direction;
 import java.util.Iterator;
 import java.util.LinkedList;
 
-public class BasicTunnel extends Tunnel{
+public class BasicTunnel extends Tunnel {
 	private Direction tunnelDirection;
 	private LinkedList<Vehicle> lane = new LinkedList<>();
 	private int carCount = 0;
@@ -36,7 +36,7 @@ public class BasicTunnel extends Tunnel{
 		if (this.tunnelDirection == vehicle.getDirection()) {
 			if (vehicle.toString().contains("CAR")) {
 				//check for car and sled
-				if (this.sledCount == 0 && this.carCount < 3) {
+				if (this.sledCount == 0 && this.carCount < 3 && this.ambulanceCount == 0) {
 					//if no sled and less than 3 cars
 					this.lane.add(vehicle);
 					this.carCount++;
@@ -44,7 +44,7 @@ public class BasicTunnel extends Tunnel{
 				}
 			} else {
 				//check for car and sled
-				if (this.carCount == 0 && this.sledCount == 0) {
+				if (this.carCount == 0 && this.sledCount == 0 && this.ambulanceCount == 0) {
 					//if no car and no sled
 					this.lane.add(vehicle);
 					this.sledCount++;
@@ -57,17 +57,19 @@ public class BasicTunnel extends Tunnel{
 	@Override
 	public synchronized void exitTunnelInner(Vehicle vehicle) {
 		this.lane.remove(vehicle);
-		if (vehicle.toString().contains("CAR")){
+		if (vehicle.toString().contains("CAR")) {
 			this.carCount--;
-		}else if (vehicle.toString().contains("SLED")){
+		}else if (vehicle.toString().contains("SLED")) {
 			this.sledCount--;
+		}else {
+			this.ambulanceCount--;
 		}
-		if (this.lane.size() == 0){
+		if (this.lane.size() == 0) {
 			this.tunnelDirection = null;
 		}
 	}
 
-	public LinkedList<Vehicle> getLane(){
+	public LinkedList<Vehicle> getLane() {
 		return this.lane;
 	}
 }
