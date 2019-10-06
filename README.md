@@ -11,6 +11,7 @@ Supports following command:
 * uniq
 * \> (pipeline operater)
 * exit (quit the command line)
+
 Additional command for concurrent operation:
 * repl_jobs (provide a list of current active jobs with a id)
 * kill (kill a active job with id)
