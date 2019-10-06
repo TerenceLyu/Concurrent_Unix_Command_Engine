@@ -9,7 +9,7 @@ Supports following command:
 * grep
 * wc
 * uniq
-* > (pipeline operater)
+* \> (pipeline operater)
 * exit (quit the command line)
 Additional command for concurrent operation:
 * repl_jobs (provide a list of current active jobs with a id)
